@@ -1,0 +1,82 @@
+% einstellungen
+\input{./config}
+
+\begin{document}
+% deckblatt
+\include{./texs/000-titel}
+\clearemptydoublepage
+  
+\pagenumbering{Roman}
+\setcounter{page}{2}
+
+\renewcommand{\baselinestretch}{0.8}
+%\addtocontents{toc}{\protect\thispagestyle{empty}}
+\tableofcontents
+%\addcontentsline{toc}{chapter}{Inhaltsverzeichnis}
+\renewcommand{\baselinestretch}{1.25}  
+
+\clearemptydoublepage
+\listoffigures
+%\clearemptydoublepage
+\listoftables
+%\clearemptydoublepage
+
+
+% nomenklatur
+%\include{texs/002-nomenklatur}
+%\Abkuerzungsverzeichnis
+\printglossary[type=\acronymtype, title=Abk"urzungsverzeichnis, nonumberlist]
+\printglossary[nonumberlist]
+\clearemptydoublepage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+%---
+\include{./texs/001-einleitung.tex}
+\clearemptydoublepage
+\include{./texs/002-Problemstellung.tex}
+\clearemptydoublepage
+\include{./texs/003-Ziele-und-Hypothese.tex}
+\clearemptydoublepage
+\include{./texs/004-Forschungsstand.tex}
+\clearemptydoublepage
+\include{./texs/005-Methode.tex}
+\clearemptydoublepage
+\include{./texs/006-Ergebnisse.tex}
+\clearemptydoublepage
+\include{./texs/007-Diskussion.tex}
+\clearemptydoublepage
+\include{./texs/008-Fazit.tex}
+%---
+
+% --- ! Erzeugen des Abbildungsverzeichnisses ! ---
+%\addcontentsline{toc}{chapter}{\numberline{II}\space Abbildungsverzeichnis}
+
+%\pagenumbering{Roman}
+%\setcounter{page}{3}
+
+%\part{Verzeichnisse und Anhang}
+
+
+
+%\listoftables
+
+% --- ! Erzeugen des Literaturverzeichnisses ! ---!
+%\addcontentsline{toc}{chapter}{\numberline{III}\space Literaturverzeichnis}
+\bibliographystyle{plainnat}
+%\bibliographystyle{harvard}
+\bibliography{./../../MyLibrary}
+\clearemptydoublepage
+
+% anhaenge
+%\begin{appendix}
+%\label{anhang}
+ %\include{./texs/anhang}
+ %\clearemptydoublepage
+ %\end{appendix}
+
+% erklaerung
+\addcontentsline{toc}{chapter}{Ehrenw"ortliche Erkl"arung}
+\include{./texs/999-erklaerung.tex}
+
+
+\end{document}

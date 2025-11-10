@@ -1,0 +1,378 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Dokumentenklasse definieren%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[%
+	%draft,     				% Entwurfsstadium
+  final,      				% fertiges Dokument
+	%%%% --- Schriftgröße ---
+  12pt,
+  bigheadings,      	% große Überschriften
+	%%%% --- Sprache ---
+  ngerman,          	% wird an andere Pakete weitergereicht
+	%%%% === Seitengröße ===
+  a4paper,
+	%%%% === Optionen für den Satzspiegel ===
+  %BCOR15mm,          	% Zusaetzlicher Rand auf der Innenseite
+  DIV14,            	% Seitengroesse (siehe Koma Skript Dokumentation(DIVcalc)!)
+  1.1headlines,     	% Zeilenanzahl der Kopfzeilen
+  headexclude,      	% Kopf nicht einbeziehen
+  footexclude,      	% Fuss nicht einbeziehen
+  mpexclude,        	% Margin nicht einbeziehen
+  pagesize,         	% Schreibt die Papiergroesse in die Datei.
+                    	% Wichtig fuer Konvertierungen
+	%%%% === Layout ===
+  oneside,         	% einseitiges Layout
+  %twoside,          	% Seitenraender für zweiseitiges Layout
+  %onecolumn,        	% Einspaltig
+  openright,       		% Kapitel beginnen immer auf der rechten Seite
+                   		% (macht nur bei 'twoside' Sinn)
+  titlepage,       		% Titel als einzelne Seite ('titlepage' Umgebung)
+	%%%% --- Absatzeinzug ---
+  %                 	% Absatzabstand: Einzeilig,
+  %parskip,         	% Freiraum in letzter Zeile: 1em
+  %                 	% Absatzabstand: Halbzeilig
+  halfparskip,     		% Freiraum in letzter Zeile: 1em
+  %                 	% Absatzabstand: keiner
+  %parindent,        	% Eingerückt (Standard)
+	%%%% --- Kolumnentitel ---
+  headsepline,     	 	% Linie unter Kolumnentitel
+  %headnosepline,  	 	% keine Linie unter Kolumnentitel
+  footsepline,				% Linie unter Fussnote
+  %footnosepline,  	 	% keine Linie unter Fussnote
+	%%%% --- Kapitel ---
+  nochapterprefix,  	% keine Ausgabe von 'Kapitel:'
+	%%%% === Verzeichnisse (TOC, LOF, LOT, BIB) ===
+  liststotoc,      		% Tabellen & Abbildungsverzeichnis ins TOC
+  idxtotoc,        		% Index ins TOC
+  bibtotoc,         	% Bibliographie ins TOC
+  %bibtotocnumbered, 	% Bibliographie im TOC nummeriert
+  %liststotocnumbered,% Alle Verzeichnisse im TOC nummeriert
+  tocindent,        	% eingereuckte Gliederung
+  %tocleft,         	% Tabellenartige TOC
+  listsindent,      	% eingereuckte LOT, LOF
+  %listsleft,       	% Tabellenartige LOT, LOF
+  %pointednumbers,  	% Überschriftnummerierung mit Punkt, siehe DUDEN !
+  pointlessnumbers, 	% Überschriftnummerierung ohne Punkt, siehe DUDEN !
+  %openbib,         	% alternative Formatierung des Literaturverzeichnisses
+	%%%% === Matheformeln ===
+  %leqno,           	% Formelnummern links
+  fleqn,            	% Formeln werden linksbuendig angezeigt
+] {scrbook}						% Klassen: scrartcl, scrreprt, scrbook
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Einbinden von neuen Paketen%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\areaset{15cm}{25cm}
+%\setlength{\voffset}{+1.5cm}
+%Zuschneiden von Schriftarten (muss am Anfang stehen)
+\usepackage{fix-cm}
+
+\usepackage{moreverb}
+
+\usepackage{stmaryrd}
+
+%\usepackage{floatflt}
+
+\usepackage[dvips]{epsfig}
+\newcommand{\clearemptydoublepage}{%                 % neue Kapitel auf ungerade Seite
+  \newpage{\pagestyle{empty}%
+  \cleardoublepage}}
+  
+%Stilvorlage fürs Literaturverzeichnis
+%\usepackage{harvard}
+%\usepackage[numbers]{natbib}
+
+\usepackage[round]{natbib}
+%\usepackage[numbers]{natbib}
+
+%\usepackage{har2nat}
+%\usepackage{bibgerm}
+%\usepackage{jurabib}
+
+%Web Support for BiTex
+\usepackage{xurl}
+
+%Das folgende Packet hyperref führt dazu,
+%dass %die wichtigsten Dokumenteneigenschaften in der PDF-Datei eingetragen werden
+%(URL, Titel, Autor, Kurzbeschreibung und Stichwörter),
+%das Inhaltsverzeichnis und die Fußnoten verlinkt werden,
+%URLs verlinkt werden und
+%URLs im Text dargestellt und umgebrochen werden können.
+\usepackage[
+	bookmarks=true,								% Lesezeichen erzeugen
+	bookmarksopen=false,					% Lesezeichen ausgeklappt
+	bookmarksnumbered=true,				% Anzeige der Kapitelzahlen am Anfang der Namen der Lesezeichen
+	pdfstartpage=1,							% Seite, welche automatisch geöffnet werden soll
+	%baseurl=http://www.server.de/dateiname.pdf, 
+	% URL des PDF-Dokuments (oder Hintergrundinformationen)
+	pdftitle={KI-gestützte Übersetzung natürlichsprachlicher Prüfungslogik in DSL-Skripte am Beispiel von Plausibilitätsprüfungen für digitale Antragsformulare},
+  % Titel des PDF-Dokuments
+	pdfauthor={Lemnitzer, Florian},	% Autor(Innen) des PDF-Dokuments
+	pdfsubject={},	% Inhaltsbeschreibung des
+	pdfkeywords={},
+  % Stichwortangabe zum PDF-Dokument
+	breaklinks=true,							% ermöglicht einen Umbruch von URLs
+	colorlinks=true,							% Einfärbung von Links
+	linkcolor=black,							% Linkfarbe: blau
+	anchorcolor=blue,						% Ankerfarbe: schwarz
+	citecolor=black, 							% Literaturlinks: schwarz
+	filecolor=black,							% Links zu lokalen Dateien: schwarz
+	menucolor=black, 							% Acrobat Menü Einträge: schwarz
+	pagecolor=black, 							% Links zu anderen Seiten im Text: schwarz
+	urlcolor=black,							% URL-Farbe: blau
+	%backref=true,
+	pagebackref=false,
+	pdfcenterwindow=true,
+	pdfnewwindow=true,
+	pdffitwindow=true,
+	pdfstartview=FitH,
+	pdfpagemode=UseOutlines
+] {hyperref}
+
+
+% für wichtig-box ..
+\usepackage{fancybox}
+\usepackage{marvosym}
+
+
+%\newenvironment{important}{
+%{\color{black}\ovalbox{
+%\parbox{428}{\textcolor{black}{
+%\begin{center}
+%\begin{minipage}{5.5 in}
+%\large{\Pointinghand} \normalsize 
+%}
+%{
+%\end{minipage}
+%\end{center}
+%}}}}
+%}
+
+
+%Silbentrennung nach neuer deutschen Rechtschreibung
+%\usepackage[ngerman]{babel}
+\usepackage[german]{babel}
+
+%T1 Zeichensatzkodierung
+\usepackage[T1]{fontenc}
+
+%Sonderzeichen der deutschen Sprache z.B. ß
+\usepackage[ansinew]{inputenc}
+
+%%%%%%%%%%%%%
+%%Schriften%%
+%%%%%%%%%%%%%
+
+%Schrift ändern
+%\renewcommand{\familydefault}{pag}
+
+%Schriftarten ändern
+\newcommand{\changefont}[3]{\fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}
+
+% Latin Modern
+%\usepackage{lmodern}
+% -------------------
+% Palantino , Helvetica, Courier
+\usepackage{mathpazo}
+\usepackage[scaled=.95]{helvet}
+\usepackage{courier}
+
+% Erlaubt automatische Trennung von Worten mit Umlauten
+%\usepackage{ae}
+
+%Zum definieren der einzelnen Elemente im Text. Sollte aber beim Standard belassen werden
+\usepackage{typearea}
+
+%Zum definieren der Zeilenabstandes
+\usepackage{setspace}
+
+%durch dieses Paket ist das Einbinden von Grafiken möglich, aber nur eps Dateien
+\usepackage[]{graphicx}
+
+%durch dies Pakete können Bilder mit Textumflossen werden
+%\usepackage{floatflt}
+%\usepackage{/picins}
+
+%durch dieses Paket werden die Farbnamen definiert
+\usepackage[usenames]{color}
+
+%hierdurch wird Quellcode besser dargestellt
+\usepackage{listings}
+\renewcommand\lstlistlistingname{Quellcodeverzeichnis}
+
+%Abkürzungsverzeichnis
+\usepackage[intoc]{nomencl}
+\usepackage[normalem]{ulem} %Möglichkeiten zum welligen Unterstreichen bzw. durchstreichen von Text
+
+\usepackage[acronym, toc,languages=german]{glossaries}
+\input{./glossar}
+
+\makeglossaries
+%%%%%%%%%%%%%%%%%%%%
+%%Allgemeine Dinge%%
+%%%%%%%%%%%%%%%%%%%%
+
+%Zeilenabstand 1.5
+\onehalfspace 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Definieren des Abkürzungsverzeichnises%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Befehl umbenennen in abk
+\let\abk\nomenclature
+
+% Befehl damit in der Kopfzeile auf der zweiten Seite auch Abkürzungsverzeichnis angezeigt wird
+\newcommand{\Abkuerzungsverzeichnis}{
+%\clearpage % bei Option "oneside"
+\cleardoublepage % bei Option "twoside"
+\markboth{\nomname}{\nomname}
+\printnomenclature
+\newpage
+}
+
+% Deutsche Überschrift
+\renewcommand{\nomname}{Abkürzungsverzeichnis}
+
+% Punkte zw. Abkürzung und Erklärung
+\setlength{\nomlabelwidth}{.20\hsize}
+\renewcommand{\nomlabel}[1]{#1 \dotfill}
+
+% Zeilenabstände verkleinern
+\setlength{\nomitemsep}{-\parsep}
+\makenomenclature
+
+%Unterstreichung des Markup Buchstaben
+\newcommand{\markup}[1]{\uline{#1}}
+
+%Optionale Argument können mit dem voreingestellten Wert verglichen werden
+\usepackage{ifthen}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Definieren der Kopf- und Fußzeilen%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{fancyhdr} 			%Paket laden
+\pagestyle{fancy}						%eigener Seitenstil
+\fancyhf{}									%alle Kopf- und Fußzeilenfelder bereinigen
+\fancyhead[OR]{						 	% "O" steht für "odd", also ungerade Seiten; "L" steht für links
+	\color{black}
+	\changefont{pag}{m}{n}
+	\bfseries\leftmark
+}
+\fancyhead[EL]{ % "E" für "even", also gerade Seiten; "R" steht für rechts
+%\fancyhead[L]{
+	\color{black}
+	\changefont{pag}{m}{n}
+	\bfseries\rightmark
+}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\renewcommand{\headrulewidth}{0.4pt}				%obere Trennlinie
+
+\fancyfoot[OR,EL]{			%Seitennummer
+%\fancyfoot[OR,L]{			%Seitennummer
+	\color{black}
+	\changefont{pag}{m}{n}
+	\bfseries\thepage
+}	
+\renewcommand{\footrulewidth}{0.4pt}				%untere Trennlinie
+
+%Plain umdefinieren für z.B. neues Kapitel
+\fancypagestyle{plain}{
+	\fancyhead{} 												
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{0.4 pt}
+}
+
+%Farbe für Trennlinie im Kopf wechseln
+\renewcommand{\headrule}{{\color{black}
+	\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth}
+}
+
+%Farbe für Trennlinie im Fuß wechseln
+\renewcommand{\footrule}{{\color{black}
+	\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth \vspace{2mm}}
+}
+
+%zum definieren von Farben
+\definecolor{myBlue} {rgb}{0.423529412,0.388235294,0.725490196}
+\definecolor{myRed} {cmyk}{0.02,0.88,0.99,0.0}
+\definecolor{myBlue2} {cmyk}{0.681,0.511,0,0.471}
+\definecolor{myTablehead} {cmyk}{0.57,0.19,0,0}
+
+%%%%
+%%TABELLEN
+%%%%
+
+\usepackage{colortbl}
+\usepackage{hhline,float}
+\usepackage{array}
+\usepackage{booktabs} %einzelne Linien in Tabellen dicker oder dünner
+\usepackage{supertabular} %Tabellen über mehrere Seiten
+
+%%%%
+%%Tabellen vorbereiten
+%%
+%%Parameter
+%%   Caption
+%%   Label
+%%   Table
+%%%%
+\newcommand{\ocTable}[4]{
+	\begin{center}
+		\begin{table}[htbp]
+			#3
+			\caption{#1}
+			\label{tbl:#2}
+			#4
+		\end{table}
+	\end{center}
+}
+
+%%%%
+%%Tabellenkopf vorbereiten
+%%%%
+\newcommand{\ocTableHeadRow}{\rowcolor{myTablehead}}
+\newcommand{\ocTablHead}[1]{
+	\textcolor{white}{\textbf{#1}}
+}
+%%%%
+%%Tabellensatzformatierungen von Herrn Voß
+%%http://www.torsten-schuetze.de/tex/tabsatz-2004.pdf
+%%%%
+\newcolumntype{f}{>{$}l<{$}}
+\newcolumntype{n}{l}
+\newcolumntype{N}{>{\scriptsize}l}
+\newcolumntype{v}[1]{>{\raggedright\hspace{0pt}}p{#1}}
+\newcolumntype{V}[1]{>{\scriptsize\raggedright\hspace{0pt}}p{#1}}
+\newcolumntype{B}[1]{>{\boldmath\DC@{.}{,}{#1}}l<{\DC@end}}
+\newcolumntype{d}[1]{>{\DC@{.}{,}{#1}}l<{\DC@end}}
+\newcolumntype{R}[1]{%
+	>{\begin{turn}{90}\begin{minipage}{#1}\scriptsize\raggedright\hspace{0pt}}l%
+	<{\end{minipage}\end{turn}}%
+}
+\newcolumntype{x}{>{\scriptsize\raggedright\hspace{0pt}}X}
+\newcolumntype{A}{>{\columncolor{myTablehead}}c}
+
+%%%%
+%%Seitenverweise
+%%%%
+% wenn gleiche Seite dann keinen Seitenverweis
+\newcommand{\ocRef}[2]{#1 \ref{#2}\label{label #2}\ifthenelse{\equal{\pageref{label #2}}{\pageref{#2}}}{}{, S. \pageref{#2}}}
+\newcommand{\ocFigref}[1]{\ocRef{Abb.}{fig:#1}}
+\newcommand{\ocTblref}[1]{\ocRef{Tabelle}{tbl:#1}}
+\newcommand{\ocPararef}[1]{\ocRef{Abschnitt}{sec:#1}}
+\newcommand{\ocChapterref}[1]{\ocRef{Kapitel}{sec:#1}}
+\newcommand{\ocLstref}[1]{\ocRef{Quelltext}{#1}}
+%\newcommand{\ocNameref}[1]{`\nameref{#1}' auf Seite~\pageref{#1}}
+
+%To-Do Befehl
+\newcommand{\todo}[1]{\textbf{\textsc{\textcolor{red}{(TODO: #1)}}}}
+\newcommand{\vera}[1]{\textbf{\textsc{\textcolor{purple}{(Frage an Vera: #1)}}}}
+\newcommand{\niels}[1]{\textbf{\textsc{\textcolor{blue}{(Frage an Niels: #1)}}}}
+\newcommand{\plannedpages}[1]{\textbf{\textsc{\textcolor{green}{(Geplante Seitenzahl: #1)}}}}
+\newcommand{\review}[1]{\textbf{\textsc{\textcolor{orange}{(Anmerkung aus Review: #1)}}}}
+
+\setlength\fboxsep{0.5pt}
+\setlength\fboxrule{0.3pt}

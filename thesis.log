@@ -1,0 +1,1737 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2024.2.23)  10 NOV 2025 13:01
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./thesis.tex
+(thesis.tex
+LaTeX2e <2023-11-01>
+L3 programming layer <2023-11-01>
+(config.tex
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrboo
+k.cls
+Document Class: scrbook 2023/07/07 v3.41 KOMA-Script document class (book)
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrkba
+se.sty
+Package: scrkbase 2023/07/07 v3.41 KOMA-Script package (KOMA-Script-dependent b
+asics and keyval usage)
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrbas
+e.sty
+Package: scrbase 2023/07/07 v3.41 KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfi
+le.sty
+Package: scrlfile 2023/07/07 v3.41 KOMA-Script package (file load hooks)
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfi
+le-hook.sty
+Package: scrlfile-hook 2023/07/07 v3.41 KOMA-Script package (using LaTeX hooks)
+
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlog
+o.sty
+Package: scrlogo 2023/07/07 v3.41 KOMA-Script package (logo)
+)))
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.st
+y
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+Applying: [2021/05/01] Usage of raw or classic option list on input line 252.
+Already applied: [0000/00/00] Usage of raw or classic option list on input line
+ 368.
+))
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\tocbas
+ic.sty
+Package: tocbasic 2023/07/07 v3.41 KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip48
+\scr@dte@tocline@numbox=\box51
+)
+Package tocbasic Info: omitting babel extension for `toc'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `toc' on input line 135.
+Class scrbook Info: You've used standard option `final'.
+(scrbook)           This is correct!
+(scrbook)           Internally I'm using `draft=false'.
+(scrbook)           If you'd like to set the option with \KOMAoptions,
+(scrbook)           you'd have to use `draft=false' there
+(scrbook)           instead of `final', too.
+Package scrbook Info: You've used standard option `12pt'.
+(scrbook)             This is correct!
+(scrbook)             Internally I'm using `fontsize=12pt'.
+(scrbook)             If you'd like to set the option with \KOMAoptions,
+(scrbook)             you'd have to use `fontsize=12pt' there
+(scrbook)             instead of `12pt', too.
+
+
+Class scrbook Warning: You've used deprecated option `bigheadings'.
+(scrbook)              Usage of this option indicates an old document
+(scrbook)              and changes compatibility level using
+(scrbook)              `headings=big,version=first,
+(scrbook)              enabledeprecatedfontcommands' that may result
+(scrbook)              in further warnings.
+(scrbook)              If you don't want this, you should simply
+(scrbook)              replace option `bigheadings' by `headings=big'.
+
+Class scrbook Info: Switching compatibility level to `first'.
+
+Class scrbook Warning: Switching back to an old KOMA-Script release does
+(scrbook)              not mean, that KOMA-Script is fully compatible with
+(scrbook)              the old release. If you need full compatibility
+(scrbook)              to an old KOMA-Script release, you should use that
+(scrbook)              old KOMA-Script release. However, in that case you
+(scrbook)              could also need old releases of other packages and
+(scrbook)              even of the LaTeX kernel.
+(scrbook)              You should also note, that the KOMA-Script developers
+(scrbook)              refuse support for documents using `version=first'.
+(scrbook)              We recommend to eliminate all deprecated options
+(scrbook)              and commands. We also recommend to not use option
+(scrbook)              `version', i.e., with other values than `last'.
+
+
+Class scrbook Warning: deprecated option `enabledeprecatedfontcommands'.
+(scrbook)              Note, that this option was already depreacted when
+(scrbook)              it has been defined. Support for old font commands
+(scrbook)              has been removed from KOMA-Script more than one
+(scrbook)              decade ago. It is not recommended to use them any
+(scrbook)              longer. Therefore usage of this class option also
+(scrbook)              is not recommended.
+
+Class scrbook Info: You've used standard option `oneside'.
+(scrbook)           This is correct!
+(scrbook)           Internally I'm using `twoside=false'.
+(scrbook)           If you'd like to set the option with \KOMAoptions,
+(scrbook)           you'd have to use `twoside=false' there
+(scrbook)           instead of `oneside', too.
+Class scrbook Info: You've used standard option `openright'.
+(scrbook)           This is correct!
+(scrbook)           Internally I'm using `open=right'.
+(scrbook)           If you'd like to set the option with \KOMAoptions,
+(scrbook)           you'd have to use `open=right' there
+(scrbook)           instead of `openright', too.
+
+Class scrbook Warning: You've used deprecated option `halfparskip'.
+(scrbook)              Usage of this option indicates an old document
+(scrbook)              and changes compatibility level using
+(scrbook)              `parskip=half,version=first,
+(scrbook)              enabledeprecatedfontcommands' that may result
+(scrbook)              in further warnings.
+(scrbook)              If you don't want this, you should simply
+(scrbook)              replace option `halfparskip' by `parskip=half'.
+
+Class scrbook Info: Switching compatibility level to `first'.
+
+Class scrbook Warning: Switching back to an old KOMA-Script release does
+(scrbook)              not mean, that KOMA-Script is fully compatible with
+(scrbook)              the old release. If you need full compatibility
+(scrbook)              to an old KOMA-Script release, you should use that
+(scrbook)              old KOMA-Script release. However, in that case you
+(scrbook)              could also need old releases of other packages and
+(scrbook)              even of the LaTeX kernel.
+(scrbook)              You should also note, that the KOMA-Script developers
+(scrbook)              refuse support for documents using `version=first'.
+(scrbook)              We recommend to eliminate all deprecated options
+(scrbook)              and commands. We also recommend to not use option
+(scrbook)              `version', i.e., with other values than `last'.
+
+
+Class scrbook Warning: deprecated option `enabledeprecatedfontcommands'.
+(scrbook)              Note, that this option was already depreacted when
+(scrbook)              it has been defined. Support for old font commands
+(scrbook)              has been removed from KOMA-Script more than one
+(scrbook)              decade ago. It is not recommended to use them any
+(scrbook)              longer. Therefore usage of this class option also
+(scrbook)              is not recommended.
+
+
+Class scrbook Warning: You've used deprecated option `nochapterprefix'.
+(scrbook)              Usage of this option indicates an old document
+(scrbook)              and changes compatibility level using
+(scrbook)              `chapterprefix=false,version=first,
+(scrbook)              enabledeprecatedfontcommands' that may result
+(scrbook)              in further warnings.
+(scrbook)              If you don't want this, you should simply
+(scrbook)              replace option `nochapterprefix' by `chapterprefix=false
+'.
+
+Class scrbook Info: Switching compatibility level to `first'.
+
+Class scrbook Warning: Switching back to an old KOMA-Script release does
+(scrbook)              not mean, that KOMA-Script is fully compatible with
+(scrbook)              the old release. If you need full compatibility
+(scrbook)              to an old KOMA-Script release, you should use that
+(scrbook)              old KOMA-Script release. However, in that case you
+(scrbook)              could also need old releases of other packages and
+(scrbook)              even of the LaTeX kernel.
+(scrbook)              You should also note, that the KOMA-Script developers
+(scrbook)              refuse support for documents using `version=first'.
+(scrbook)              We recommend to eliminate all deprecated options
+(scrbook)              and commands. We also recommend to not use option
+(scrbook)              `version', i.e., with other values than `last'.
+
+
+Class scrbook Warning: deprecated option `enabledeprecatedfontcommands'.
+(scrbook)              Note, that this option was already depreacted when
+(scrbook)              it has been defined. Support for old font commands
+(scrbook)              has been removed from KOMA-Script more than one
+(scrbook)              decade ago. It is not recommended to use them any
+(scrbook)              longer. Therefore usage of this class option also
+(scrbook)              is not recommended.
+
+
+Class scrbook Warning: You've used deprecated option `liststotoc'.
+(scrbook)              Usage of this option indicates an old document
+(scrbook)              and changes compatibility level using
+(scrbook)              `listof=totoc,version=first,
+(scrbook)              enabledeprecatedfontcommands' that may result
+(scrbook)              in further warnings.
+(scrbook)              If you don't want this, you should simply
+(scrbook)              replace option `liststotoc' by `listof=totoc'.
+
+Class scrbook Info: Switching compatibility level to `first'.
+
+Class scrbook Warning: Switching back to an old KOMA-Script release does
+(scrbook)              not mean, that KOMA-Script is fully compatible with
+(scrbook)              the old release. If you need full compatibility
+(scrbook)              to an old KOMA-Script release, you should use that
+(scrbook)              old KOMA-Script release. However, in that case you
+(scrbook)              could also need old releases of other packages and
+(scrbook)              even of the LaTeX kernel.
+(scrbook)              You should also note, that the KOMA-Script developers
+(scrbook)              refuse support for documents using `version=first'.
+(scrbook)              We recommend to eliminate all deprecated options
+(scrbook)              and commands. We also recommend to not use option
+(scrbook)              `version', i.e., with other values than `last'.
+
+
+Class scrbook Warning: deprecated option `enabledeprecatedfontcommands'.
+(scrbook)              Note, that this option was already depreacted when
+(scrbook)              it has been defined. Support for old font commands
+(scrbook)              has been removed from KOMA-Script more than one
+(scrbook)              decade ago. It is not recommended to use them any
+(scrbook)              longer. Therefore usage of this class option also
+(scrbook)              is not recommended.
+
+
+Class scrbook Warning: You've used deprecated option `idxtotoc'.
+(scrbook)              Usage of this option indicates an old document
+(scrbook)              and changes compatibility level using
+(scrbook)              `index=totoc,version=first,
+(scrbook)              enabledeprecatedfontcommands' that may result
+(scrbook)              in further warnings.
+(scrbook)              If you don't want this, you should simply
+(scrbook)              replace option `idxtotoc' by `index=totoc'.
+
+Class scrbook Info: Switching compatibility level to `first'.
+
+Class scrbook Warning: Switching back to an old KOMA-Script release does
+(scrbook)              not mean, that KOMA-Script is fully compatible with
+(scrbook)              the old release. If you need full compatibility
+(scrbook)              to an old KOMA-Script release, you should use that
+(scrbook)              old KOMA-Script release. However, in that case you
+(scrbook)              could also need old releases of other packages and
+(scrbook)              even of the LaTeX kernel.
+(scrbook)              You should also note, that the KOMA-Script developers
+(scrbook)              refuse support for documents using `version=first'.
+(scrbook)              We recommend to eliminate all deprecated options
+(scrbook)              and commands. We also recommend to not use option
+(scrbook)              `version', i.e., with other values than `last'.
+
+
+Class scrbook Warning: deprecated option `enabledeprecatedfontcommands'.
+(scrbook)              Note, that this option was already depreacted when
+(scrbook)              it has been defined. Support for old font commands
+(scrbook)              has been removed from KOMA-Script more than one
+(scrbook)              decade ago. It is not recommended to use them any
+(scrbook)              longer. Therefore usage of this class option also
+(scrbook)              is not recommended.
+
+
+Class scrbook Warning: You've used deprecated option `bibtotoc'.
+(scrbook)              Usage of this option indicates an old document
+(scrbook)              and changes compatibility level using
+(scrbook)              `bibliography=totoc,version=first,
+(scrbook)              enabledeprecatedfontcommands' that may result
+(scrbook)              in further warnings.
+(scrbook)              If you don't want this, you should simply
+(scrbook)              replace option `bibtotoc' by `bibliography=totoc'.
+
+Class scrbook Info: Switching compatibility level to `first'.
+
+Class scrbook Warning: Switching back to an old KOMA-Script release does
+(scrbook)              not mean, that KOMA-Script is fully compatible with
+(scrbook)              the old release. If you need full compatibility
+(scrbook)              to an old KOMA-Script release, you should use that
+(scrbook)              old KOMA-Script release. However, in that case you
+(scrbook)              could also need old releases of other packages and
+(scrbook)              even of the LaTeX kernel.
+(scrbook)              You should also note, that the KOMA-Script developers
+(scrbook)              refuse support for documents using `version=first'.
+(scrbook)              We recommend to eliminate all deprecated options
+(scrbook)              and commands. We also recommend to not use option
+(scrbook)              `version', i.e., with other values than `last'.
+
+
+Class scrbook Warning: deprecated option `enabledeprecatedfontcommands'.
+(scrbook)              Note, that this option was already depreacted when
+(scrbook)              it has been defined. Support for old font commands
+(scrbook)              has been removed from KOMA-Script more than one
+(scrbook)              decade ago. It is not recommended to use them any
+(scrbook)              longer. Therefore usage of this class option also
+(scrbook)              is not recommended.
+
+
+Class scrbook Warning: You've used deprecated option `tocindent'.
+(scrbook)              Usage of this option indicates an old document
+(scrbook)              and changes compatibility level using
+(scrbook)              `toc=graduated,version=first,
+(scrbook)              enabledeprecatedfontcommands' that may result
+(scrbook)              in further warnings.
+(scrbook)              If you don't want this, you should simply
+(scrbook)              replace option `tocindent' by `toc=graduated'.
+
+Class scrbook Info: Switching compatibility level to `first'.
+
+Class scrbook Warning: Switching back to an old KOMA-Script release does
+(scrbook)              not mean, that KOMA-Script is fully compatible with
+(scrbook)              the old release. If you need full compatibility
+(scrbook)              to an old KOMA-Script release, you should use that
+(scrbook)              old KOMA-Script release. However, in that case you
+(scrbook)              could also need old releases of other packages and
+(scrbook)              even of the LaTeX kernel.
+(scrbook)              You should also note, that the KOMA-Script developers
+(scrbook)              refuse support for documents using `version=first'.
+(scrbook)              We recommend to eliminate all deprecated options
+(scrbook)              and commands. We also recommend to not use option
+(scrbook)              `version', i.e., with other values than `last'.
+
+
+Class scrbook Warning: deprecated option `enabledeprecatedfontcommands'.
+(scrbook)              Note, that this option was already depreacted when
+(scrbook)              it has been defined. Support for old font commands
+(scrbook)              has been removed from KOMA-Script more than one
+(scrbook)              decade ago. It is not recommended to use them any
+(scrbook)              longer. Therefore usage of this class option also
+(scrbook)              is not recommended.
+
+
+Class scrbook Warning: You've used deprecated option `listsindent'.
+(scrbook)              Usage of this option indicates an old document
+(scrbook)              and changes compatibility level using
+(scrbook)              `listof=graduated,version=first,
+(scrbook)              enabledeprecatedfontcommands' that may result
+(scrbook)              in further warnings.
+(scrbook)              If you don't want this, you should simply
+(scrbook)              replace option `listsindent' by `listof=graduated'.
+
+Class scrbook Info: Switching compatibility level to `first'.
+
+Class scrbook Warning: Switching back to an old KOMA-Script release does
+(scrbook)              not mean, that KOMA-Script is fully compatible with
+(scrbook)              the old release. If you need full compatibility
+(scrbook)              to an old KOMA-Script release, you should use that
+(scrbook)              old KOMA-Script release. However, in that case you
+(scrbook)              could also need old releases of other packages and
+(scrbook)              even of the LaTeX kernel.
+(scrbook)              You should also note, that the KOMA-Script developers
+(scrbook)              refuse support for documents using `version=first'.
+(scrbook)              We recommend to eliminate all deprecated options
+(scrbook)              and commands. We also recommend to not use option
+(scrbook)              `version', i.e., with other values than `last'.
+
+
+Class scrbook Warning: deprecated option `enabledeprecatedfontcommands'.
+(scrbook)              Note, that this option was already depreacted when
+(scrbook)              it has been defined. Support for old font commands
+(scrbook)              has been removed from KOMA-Script more than one
+(scrbook)              decade ago. It is not recommended to use them any
+(scrbook)              longer. Therefore usage of this class option also
+(scrbook)              is not recommended.
+
+
+Class scrbook Warning: You've used deprecated option `pointlessnumbers'.
+(scrbook)              Usage of this option indicates an old document
+(scrbook)              and changes compatibility level using
+(scrbook)              `numbers=noenddot,version=first,
+(scrbook)              enabledeprecatedfontcommands' that may result
+(scrbook)              in further warnings.
+(scrbook)              If you don't want this, you should simply
+(scrbook)              replace option `pointlessnumbers' by `numbers=noenddot'.
+
+
+Class scrbook Info: Switching compatibility level to `first'.
+
+Class scrbook Warning: Switching back to an old KOMA-Script release does
+(scrbook)              not mean, that KOMA-Script is fully compatible with
+(scrbook)              the old release. If you need full compatibility
+(scrbook)              to an old KOMA-Script release, you should use that
+(scrbook)              old KOMA-Script release. However, in that case you
+(scrbook)              could also need old releases of other packages and
+(scrbook)              even of the LaTeX kernel.
+(scrbook)              You should also note, that the KOMA-Script developers
+(scrbook)              refuse support for documents using `version=first'.
+(scrbook)              We recommend to eliminate all deprecated options
+(scrbook)              and commands. We also recommend to not use option
+(scrbook)              `version', i.e., with other values than `last'.
+
+
+Class scrbook Warning: deprecated option `enabledeprecatedfontcommands'.
+(scrbook)              Note, that this option was already depreacted when
+(scrbook)              it has been defined. Support for old font commands
+(scrbook)              has been removed from KOMA-Script more than one
+(scrbook)              decade ago. It is not recommended to use them any
+(scrbook)              longer. Therefore usage of this class option also
+(scrbook)              is not recommended.
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/base\fleqn.clo
+File: fleqn.clo 2016/12/29 v1.2b Standard LaTeX option (flush left equations)
+\mathindent=\skip49
+Applying: [2015/01/01] Make \[ robust on input line 50.
+LaTeX Info: Redefining \[ on input line 51.
+Already applied: [0000/00/00] Make \[ robust on input line 62.
+Applying: [2015/01/01] Make \] robust on input line 74.
+LaTeX Info: Redefining \] on input line 75.
+Already applied: [0000/00/00] Make \] robust on input line 83.
+)
+Class scrbook Info: File `scrsize12pt.clo' used to setup font sizes on input li
+ne 2691.
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrsiz
+e12pt.clo
+File: scrsize12pt.clo 2023/07/07 v3.41 KOMA-Script font size class option (12pt
+)
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\typear
+ea.sty
+Package: typearea 2023/07/07 v3.41 KOMA-Script package (type area)
+\ta@bcor=\skip50
+\ta@div=\count186
+Package typearea Info: You've used standard option `a4paper'.
+(typearea)             This is correct!
+(typearea)             Internally I'm using `paper=a4'.
+(typearea)             If you'd like to set the option with \KOMAoptions,
+(typearea)             you'd have to use `paper=a4' there
+(typearea)             instead of `a4paper', too.
+
+
+Package typearea Warning: You've used deprecated option `headexclude'.
+(typearea)                Usage of this option indicates an old document
+(typearea)                and changes compatibility level using
+(typearea)                `headinclude=false,version=first,
+(typearea)                enabledeprecatedfontcommands' that may result
+(typearea)                in further warnings.
+(typearea)                If you don't want this, you should simply
+(typearea)                replace option `headexclude' by `headinclude=false'.
+
+Package typearea Info: Switching compatibility level to `first'.
+
+Package typearea Warning: Switching back to an old KOMA-Script release does
+(typearea)                not mean, that KOMA-Script is fully compatible with
+(typearea)                the old release. If you need full compatibility
+(typearea)                to an old KOMA-Script release, you should use that
+(typearea)                old KOMA-Script release. However, in that case you
+(typearea)                could also need old releases of other packages and
+(typearea)                even of the LaTeX kernel.
+(typearea)                You should also note, that the KOMA-Script developers
+
+(typearea)                refuse support for documents using `version=first'.
+(typearea)                We recommend to eliminate all deprecated options
+(typearea)                and commands. We also recommend to not use option
+(typearea)                `version', i.e., with other values than `last'.
+
+
+Package typearea Warning: You've used deprecated option `footexclude'.
+(typearea)                Usage of this option indicates an old document
+(typearea)                and changes compatibility level using
+(typearea)                `footinclude=false,version=first,
+(typearea)                enabledeprecatedfontcommands' that may result
+(typearea)                in further warnings.
+(typearea)                If you don't want this, you should simply
+(typearea)                replace option `footexclude' by `footinclude=false'.
+
+Package typearea Info: Switching compatibility level to `first'.
+
+Package typearea Warning: Switching back to an old KOMA-Script release does
+(typearea)                not mean, that KOMA-Script is fully compatible with
+(typearea)                the old release. If you need full compatibility
+(typearea)                to an old KOMA-Script release, you should use that
+(typearea)                old KOMA-Script release. However, in that case you
+(typearea)                could also need old releases of other packages and
+(typearea)                even of the LaTeX kernel.
+(typearea)                You should also note, that the KOMA-Script developers
+
+(typearea)                refuse support for documents using `version=first'.
+(typearea)                We recommend to eliminate all deprecated options
+(typearea)                and commands. We also recommend to not use option
+(typearea)                `version', i.e., with other values than `last'.
+
+
+Package typearea Warning: You've used deprecated option `mpexclude'.
+(typearea)                Usage of this option indicates an old document
+(typearea)                and changes compatibility level using
+(typearea)                `mpinclude=false,version=first,
+(typearea)                enabledeprecatedfontcommands' that may result
+(typearea)                in further warnings.
+(typearea)                If you don't want this, you should simply
+(typearea)                replace option `mpexclude' by `mpinclude=false'.
+
+Package typearea Info: Switching compatibility level to `first'.
+
+Package typearea Warning: Switching back to an old KOMA-Script release does
+(typearea)                not mean, that KOMA-Script is fully compatible with
+(typearea)                the old release. If you need full compatibility
+(typearea)                to an old KOMA-Script release, you should use that
+(typearea)                old KOMA-Script release. However, in that case you
+(typearea)                could also need old releases of other packages and
+(typearea)                even of the LaTeX kernel.
+(typearea)                You should also note, that the KOMA-Script developers
+
+(typearea)                refuse support for documents using `version=first'.
+(typearea)                We recommend to eliminate all deprecated options
+(typearea)                and commands. We also recommend to not use option
+(typearea)                `version', i.e., with other values than `last'.
+
+Package typearea Info: You've used standard option `oneside'.
+(typearea)             This is correct!
+(typearea)             Internally I'm using `twoside=false'.
+(typearea)             If you'd like to set the option with \KOMAoptions,
+(typearea)             you'd have to use `twoside=false' there
+(typearea)             instead of `oneside', too.
+
+Package typearea Warning: You've used deprecated option `DIV14'.
+(typearea)                Usage of this option indicates an old document
+(typearea)                and changes compatibility level using
+(typearea)                `DIV=14,version=first,
+(typearea)                enabledeprecatedfontcommands' that may result
+(typearea)                in further warnings.
+(typearea)                If you don't want this, you should simply
+(typearea)                replace option `DIV14' by `DIV=14'.
+
+Package typearea Info: Switching compatibility level to `first'.
+
+Package typearea Warning: Switching back to an old KOMA-Script release does
+(typearea)                not mean, that KOMA-Script is fully compatible with
+(typearea)                the old release. If you need full compatibility
+(typearea)                to an old KOMA-Script release, you should use that
+(typearea)                old KOMA-Script release. However, in that case you
+(typearea)                could also need old releases of other packages and
+(typearea)                even of the LaTeX kernel.
+(typearea)                You should also note, that the KOMA-Script developers
+
+(typearea)                refuse support for documents using `version=first'.
+(typearea)                We recommend to eliminate all deprecated options
+(typearea)                and commands. We also recommend to not use option
+(typearea)                `version', i.e., with other values than `last'.
+
+\ta@hblk=\skip51
+\ta@vblk=\skip52
+\ta@temp=\skip53
+\footheight=\skip54
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 14
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 469.47052pt
+(typearea)              DIV departure   = -11%
+(typearea)              \evensidemargin = -8.25128pt
+(typearea)              \oddsidemargin  = -8.25128pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 577.5pt
+(typearea)              \topmargin      = -11.9095pt
+(typearea)              \headheight     = 15.95009pt
+(typearea)              \headsep        = 21.75pt
+(typearea)              \topskip        = 12.0pt
+(typearea)              \footskip       = 50.75pt
+(typearea)              \baselineskip   = 14.5pt
+(typearea)              on input line 1799.
+)
+\c@part=\count187
+\c@chapter=\count188
+\c@section=\count189
+\c@subsection=\count190
+\c@subsubsection=\count191
+\c@paragraph=\count192
+\c@subparagraph=\count193
+\scr@dte@chapter@maxnumwidth=\skip55
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\chapter on input line 5990.
+\scr@dte@section@maxnumwidth=\skip56
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\section on input line 6001.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\section on input line 6001.
+\scr@dte@part@maxnumwidth=\skip57
+Class scrbook Info: using compatibility default `afterindent=true'
+(scrbook)           for `\part on input line 6010.
+\scr@dte@subsection@maxnumwidth=\skip58
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\subsection on input line 6020.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\subsection on input line 6020.
+\scr@dte@subsubsection@maxnumwidth=\skip59
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\subsubsection on input line 6030.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\subsubsection on input line 6030.
+\scr@dte@paragraph@maxnumwidth=\skip60
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\paragraph on input line 6041.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\paragraph on input line 6041.
+\scr@dte@subparagraph@maxnumwidth=\skip61
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\subparagraph on input line 6051.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\subparagraph on input line 6051.
+\abovecaptionskip=\skip62
+\belowcaptionskip=\skip63
+\c@pti@nb@sid@b@x=\box52
+Package tocbasic Info: omitting babel extension for `lof'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lof' on input line 7242.
+\scr@dte@figure@maxnumwidth=\skip64
+\c@figure=\count194
+Package tocbasic Info: omitting babel extension for `lot'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lot' on input line 7259.
+\scr@dte@table@maxnumwidth=\skip65
+\c@table=\count195
+Class scrbook Info: Using old \@makefntext due to compatibility level
+(scrbook)           less than 3.22 on input line 7417.
+Class scrbook Info: Redefining `\numberline' on input line 7430.
+\bibindent=\dimen140
+)
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = areaset
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 426.79134pt
+(typearea)              \evensidemargin = 13.0883pt
+(typearea)              \oddsidemargin  = 13.0883pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 621.8189pt
+(typearea)              \topmargin      = -27.69398pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 21.75pt
+(typearea)              \topskip        = 12.0pt
+(typearea)              \footskip       = 50.75pt
+(typearea)              \baselineskip   = 14.5pt
+(typearea)              on input line 65.
+ (C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/base\fix-cm.sty
+Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+))
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/moreverb\moreverb.
+sty
+Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+Package: verbatim 2022-07-02 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks18
+\verbatim@line=\toks19
+\verbatim@in@stream=\read2
+)
+\tab@position=\count196
+\tab@size=\count197
+\listing@line=\count198
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\stmaryrd.
+sty
+Package: stmaryrd 1994/03/03 St Mary's Road symbol package
+\symstmry=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
+(Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/graphics\epsfig.st
+y
+Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.
+sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.
+sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graph
+ics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvips.def on input line 107.
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\dvips
+.def
+File: dvips.def 2022/09/22 v3.1e Graphics/color driver for dvips
+))
+\Gin@req@height=\dimen141
+\Gin@req@width=\dimen142
+)
+\epsfxsize=\dimen143
+\epsfysize=\dimen144
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip66
+\bibsep=\skip67
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count199
+) (C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/xurl\xurl.sty
+Package: xurl 2022/01/09 v 0.10 modify URL breaks
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+))
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.
+sty
+Package: hyperref 2023-10-27 v7.01d Hypertext links for LaTeX
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.
+sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdfte
+xcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwar
+err.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkey
+s.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvd
+efinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfesc
+ape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.st
+y
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltx
+macro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.st
+y
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.s
+ty
+Package: nameref 2023-10-05 v2.54 Cross-referencing by name of section
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.
+sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\g
+ettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoption
+s.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count266
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.
+sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count267
+)
+\@linkdim=\dimen145
+\Hy@linkcounter=\count268
+\Hy@pagecounter=\count269
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.de
+f
+File: pd1enc.def 2023-10-27 v7.01d Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.
+sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count270
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2023-10-27 v7.01d Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `final' set `true' on input line 4051.
+Package hyperref Info: Option `bookmarks' set `true' on input line 4051.
+Package hyperref Info: Option `bookmarksopen' set `false' on input line 4051.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 4051
+.
+Package hyperref Info: Option `breaklinks' set `true' on input line 4051.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4051.
+
+
+Package hyperref Warning: Option `pagecolor' is not available anymore.
+
+Package hyperref Info: Option `pdfcenterwindow' set `true' on input line 4051.
+Package hyperref Info: Option `pdfnewwindow' set `true' on input line 4051.
+Package hyperref Info: Option `pdffitwindow' set `true' on input line 4051.
+Package hyperref Info: Hyper figures OFF on input line 4168.
+Package hyperref Info: Link nesting OFF on input line 4173.
+Package hyperref Info: Hyper index ON on input line 4176.
+Package hyperref Info: Plain pages OFF on input line 4183.
+Package hyperref Info: Backreferencing OFF on input line 4188.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4435.
+\c@Hy@tempcnt=\count271
+LaTeX Info: Redefining \url on input line 4773.
+\XeTeXLinkMargin=\dimen146
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.st
+y
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigin
+tcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count272
+\Field@Width=\dimen147
+\Fld@charsize=\dimen148
+Package hyperref Info: Hyper figures OFF on input line 6052.
+Package hyperref Info: Link nesting OFF on input line 6057.
+Package hyperref Info: Hyper index ON on input line 6060.
+Package hyperref Info: backreferencing OFF on input line 6067.
+Package hyperref Info: Link coloring ON on input line 6070.
+Package hyperref Info: Link coloring with OCG OFF on input line 6077.
+Package hyperref Info: PDF/A mode OFF on input line 6082.
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.
+sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count273
+\c@Item=\count274
+\c@Hfootnote=\count275
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.d
+ef
+File: hpdftex.def 2023-10-27 v7.01d Hyperref driver for pdfTeX
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx
+.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count276
+\c@bookmark@seq@number=\count277
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rer
+unfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\un
+iquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip68
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/fancybox\fancybox.
+sty
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box53
+\shadowsize=\dimen149
+\@Sbox=\box54
+\do@VerbBox=\toks20
+\the@fancyput=\toks21
+\this@fancyput=\toks22
+\EndVerbatimTokens=\toks23
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read3
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/marvosym\marvosym.
+sty
+Package: marvosym 2011/07/20 v2.2 Martin Vogel's Symbols font definitions
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2023/10/25 v3.96 The Babel package
+\babel@savecnt=\count278
+\U@D=\dimen150
+\l@unhyphenated=\language79
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.d
+ef)
+\bbl@readstream=\read4
+\bbl@dirlevel=\count279
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngerm
+an.ldf
+Language: ngerman 2021/02/27 v2.13 German support for babel (post-1996 orthogra
+phy)
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngerm
+anb.ldf
+Language: ngermanb 2021/02/27 v2.13 German support for babel (post-1996 orthogr
+aphy)
+Package babel Info: Making " an active character on input line 122.
+))
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\germa
+n.ldf
+Language: german 2021/02/27 v2.13 German support for babel (pre-1996 orthograph
+y)
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\germa
+nb.ldf
+Language: germanb 2021/02/27 v2.13 German support for babel (pre-1996 orthograp
+hy)
+)))
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/de\
+babel-german.tex
+Package babel Info: Importing font and identification data for german
+(babel)             from babel-de-1901.ini. Reported on input line 25.
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/de\
+babel-ngerman.tex
+Package babel Info: Importing font and identification data for ngerman
+(babel)             from babel-de.ini. Reported on input line 11.
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks24
+\inpenc@posthook=\toks25
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/base\ansinew.def
+File: ansinew.def 2021/02/14 v1.3d Input encoding file
+))
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\mathpazo.st
+y
+Package: mathpazo 2020/03/25 PSNFSS-v9.3 Palatino w/ Pazo Math (D.Puga, WaS) 
+\symupright=\mathgroup5
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\helvet.sty
+Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\courier.sty
+Package: courier 2020/03/25 PSNFSS-v9.3 (WaS) 
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.
+sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color
+.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdfte
+x.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor
+.ltx))
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.
+sty
+\lst@mode=\count280
+\lst@gtempboxa=\box55
+\lst@token=\toks26
+\lst@length=\count281
+\lst@currlwidth=\dimen151
+\lst@column=\count282
+\lst@pos=\count283
+\lst@lostspace=\dimen152
+\lst@width=\dimen153
+\lst@newlines=\count284
+\lst@lineno=\count285
+\lst@maxwidth=\dimen154
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.s
+ty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+\c@lstnumber=\count286
+\lst@skipnumbers=\count287
+\lst@framebox=\box56
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.
+cfg
+File: listings.cfg 2023/02/27 1.9 listings configuration
+))
+Package: listings 2023/02/27 1.9 (Carsten Heinz)
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/nomencl\nomencl.st
+y
+Package: nomencl 2021/11/10 v5.6 Nomenclature package
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.st
+y
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.
+tex
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils
+.tex
+\XKV@toks=\toks27
+\XKV@tempa@toks=\toks28
+)
+\XKV@depth=\count288
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+Package tocbasic Info: setting babel extension for `nlo' on input line 187.
+Package tocbasic Info: setting babel extension for `nls' on input line 188.
+\nomlabelwidth=\dimen155
+\nom@tempdim=\dimen156
+\nomitemsep=\skip69
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/ulem\ulem.sty
+\UL@box=\box57
+\UL@hyphenbox=\box58
+\UL@skip=\skip70
+\UL@hook=\toks29
+\UL@height=\dimen157
+\UL@pe=\count289
+\UL@pixel=\dimen158
+\ULC@box=\box59
+Package: ulem 2019/11/18
+\ULdepth=\dimen159
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/base\gl
+ossaries.sty
+Package: glossaries 2023/09/29 v4.53 (NLCT)
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/mfirstuc\mfirstuc.
+sty
+Package: mfirstuc 2022/10/14 v2.08 (NLCT)
+\@glsmfirst=\toks30
+\@glsmrest=\toks31
+) (C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/xfor\xfor.sty
+Package: xfor 2009/02/05 v1.05 (NLCT)
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-
+base.sty
+Package: datatool-base 2019/09/27 v2.32 (NLCT)
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.st
+y
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip71
+
+For additional information on amsmath, use the `?' option.
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.st
+y
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks32
+\ex@=\dimen160
+))
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen161
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count290
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count291
+\leftroot@=\count292
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count293
+\DOTSCASE@=\count294
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box60
+\strutbox@=\box61
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen162
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count295
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count296
+\dotsspace@=\muskip17
+\c@parentequation=\count297
+\dspbrk@lvl=\count298
+\tag@help=\toks33
+\row@=\count299
+\column@=\count300
+\maxfields@=\count301
+\andhelp@=\toks34
+\eqnshift@=\dimen163
+\alignsep@=\dimen164
+\tagshift@=\dimen165
+\tagwidth@=\dimen166
+\totwidth@=\dimen167
+\lineht@=\dimen168
+\@envbody=\toks35
+\multlinegap=\skip72
+\multlinetaggap=\skip73
+\mathdisplay@stack=\toks36
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/substr\substr.sty
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count302
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-
+fp.sty
+Package: datatool-fp 2019/09/27 v2.32 (NLCT)
+ (C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp.sty
+Package: fp 1995/04/02
+
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/fp\defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count303
+) (C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count304
+\FP@xia=\count305
+\FP@xib=\count306
+\FP@xfa=\count307
+\FP@xfb=\count308
+\FP@rega=\count309
+\FP@regb=\count310
+\FP@regs=\count311
+\FP@times=\count312
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-addons.sty
+Package: fp-addons 1995/03/15
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-snap.sty
+Package: fp-snap 1995/04/05
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-exp.sty
+Package: fp-exp 1995/04/03
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-trigo.sty
+Package: fp-trigo 1995/04/14
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-pas.sty
+Package: fp-pas 1994/08/29
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count313
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eqn.sty
+Package: fp-eqn 1995/04/03
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-upn.sty
+Package: fp-upn 1996/10/21
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eval.sty
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks37
+\@dtl@tmpcount=\count314
+\dtl@tmplength=\skip74
+\dtl@sortresult=\count315
+\@dtl@numgrpsepcount=\count316
+\@dtl@datatype=\count317
+\dtl@codeA=\count318
+\dtl@codeB=\count319
+\@dtl@foreach@level=\count320
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/tracklang\tracklan
+g.sty
+Package: tracklang 2022/12/13 v1.6.1 (NLCT) Track Languages
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/generic/tracklang\trackl
+ang.tex))
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/glossaries-german\
+glossaries-german.ldf
+File: glossaries-german.ldf 2014/11/23 v1.0
+)
+\gls@level=\count321
+\@gls@tmpb=\toks38
+\gls@tmplen=\skip75
+\glskeylisttok=\toks39
+\glslabeltok=\toks40
+\glsshorttok=\toks41
+\glslongtok=\toks42
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\
+glossary-hypernav.sty
+Package: glossary-hypernav 2023/09/29 v4.53 (NLCT)
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\
+glossary-list.sty
+Package: glossary-list 2023/09/29 v4.53 (NLCT)
+\glslistdottedwidth=\skip76
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\
+glossary-long.sty
+Package: glossary-long 2023/09/29 v4.53 (NLCT)
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.st
+y
+Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
+\LTleft=\skip77
+\LTright=\skip78
+\LTpre=\skip79
+\LTpost=\skip80
+\LTchunksize=\count322
+\LTcapwidth=\dimen169
+\LT@head=\box62
+\LT@firsthead=\box63
+\LT@foot=\box64
+\LT@lastfoot=\box65
+\LT@gbox=\box66
+\LT@cols=\count323
+\LT@rows=\count324
+\c@LT@tables=\count325
+\c@LT@chunks=\count326
+\LT@p@ftn=\toks43
+)
+Class scrbook Info: longtable captions redefined on input line 47.
+\glsdescwidth=\skip81
+\glspagelistwidth=\skip82
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\
+glossary-super.sty
+Package: glossary-super 2023/09/29 v4.53 (NLCT)
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/supertabular\super
+tabular.sty
+Package: supertabular 2020/02/02 v4.1g the supertabular environment
+\c@tracingst=\count327
+\ST@wd=\dimen170
+\ST@rightskip=\skip83
+\ST@leftskip=\skip84
+\ST@parfillskip=\skip85
+\ST@pageleft=\dimen171
+\ST@headht=\dimen172
+\ST@tailht=\dimen173
+\ST@pagesofar=\dimen174
+\ST@pboxht=\dimen175
+\ST@lineht=\dimen176
+\ST@prevht=\dimen177
+\ST@toadd=\dimen178
+\ST@dimen=\dimen179
+\ST@pbox=\box67
+))
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\
+glossary-tree.sty
+Package: glossary-tree 2023/09/29 v4.53 (NLCT)
+\glstreeindent=\skip86
+)) (glossar.tex)
+\glswrite=\write4
+\glo@main@file=\write5
+\openout5 = `thesis.glo'.
+
+Package glossaries Info: Writing glossary file thesis.glo on input line 210.
+\glo@acronym@file=\write6
+\openout6 = `thesis.acn'.
+
+Package glossaries Info: Writing glossary file thesis.acn on input line 210.
+\@nomenclaturefile=\write7
+\openout7 = `thesis.nlo'.
+
+Package nomencl Info: Writing nomenclature file thesis.nlo on input line 243.
+
+
+Class scrbook Warning: Usage of package `fancyhdr' together
+(scrbook)              with a KOMA-Script class is not recommended.
+(scrbook)              I'd suggest to use 
+(scrbook)              package `scrlayer' or `scrlayer-scrpage', because
+(scrbook)              they support KOMA-Script classes.
+(scrbook)              With `fancyhdr' several features of class `scrbook'
+(scrbook)              like options `headsepline', `footsepline' or command
+(scrbook)              `\MakeMarkcase' and the commands `\setkomafont' and
+(scrbook)              `\addtokomafont' for the page style elements need
+(scrbook)              explicite user intervention to work.
+(scrbook)              Nevertheless, using requested
+(scrbook)              package `fancyhdr' on input line 256.
+
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.
+sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip87
+\f@nch@O@elh=\skip88
+\f@nch@O@erh=\skip89
+\f@nch@O@olh=\skip90
+\f@nch@O@orh=\skip91
+\f@nch@O@elf=\skip92
+\f@nch@O@erf=\skip93
+\f@nch@O@olf=\skip94
+\f@nch@O@orf=\skip95
+)
+
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less.
+(fancyhdr)                Please consider using the `twoside' option on input l
+ine 268.
+
+
+Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less.
+(fancyhdr)                Please consider using the `twoside' option on input l
+ine 278.
+
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.
+sty
+Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen180
+\ar@mcellbox=\box68
+\extrarowheight=\dimen181
+\NC@list=\toks44
+\extratabsurround=\skip96
+\backup@length=\skip97
+\ar@cellbox=\box69
+)
+\everycr=\toks45
+\minrowclearance=\skip98
+\rownum=\count328
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/tools\hhline.sty
+Package: hhline 2020/01/04 v2.04 Table rule package (DPC)
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count329
+\float@exts=\toks46
+\float@box=\box70
+\@float@everytoks=\toks47
+\@floatcapt=\box71
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.
+sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen182
+\lightrulewidth=\dimen183
+\cmidrulewidth=\dimen184
+\belowrulesep=\dimen185
+\belowbottomsep=\dimen186
+\aboverulesep=\dimen187
+\abovetopsep=\dimen188
+\cmidrulesep=\dimen189
+\cmidrulekern=\dimen190
+\defaultaddspace=\dimen191
+\@cmidla=\count330
+\@cmidlb=\count331
+\@aboverulesep=\dimen192
+\@belowrulesep=\dimen193
+\@thisruleclass=\count332
+\@lastruleclass=\count333
+\@thisrulewidth=\dimen194
+))
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 4.
+
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ppl.fd
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backen
+d-pdftex.def
+File: l3backend-pdftex.def 2023-10-23 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count334
+\l__pdf_internal_box=\box72
+) (thesis.aux (texs/000-titel.aux) (texs/001-einleitung.aux)
+(texs/002-Problemstellung.aux) (texs/003-Ziele-und-Hypothese.aux)
+(texs/004-Forschungsstand.aux) (texs/005-Methode.aux) (texs/006-Ergebnisse.aux)
+(texs/007-Diskussion.aux) (texs/008-Fazit.aux) (texs/999-erklaerung.aux))
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+Package hyperref Info: Link coloring ON on input line 4.
+
+(thesis.out) (thesis.out)
+\@outlinefile=\write8
+\openout8 = `thesis.out'.
+
+Class scrbook Info: loading recommended package `bookmark'.
+(scrbook)           Using `bookmark' together with `hyperref' is recommended,
+(scrbook)           because of handling of possible bookmark level gaps.
+(scrbook)           You can avoid loading `bookmark' with KOMA-Script option
+(scrbook)           `bookmarkpackage=false' before \begin{document} and
+(scrbook)           you can avoid this message adding:
+(scrbook)             \usepackage{bookmark}
+(scrbook)           before \begin{document} on input line 4.
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.
+sty
+Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdfte
+x.def
+File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
+\BKM@id=\count335
+))
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-p
+df.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count336
+\scratchdimen=\dimen195
+\scratchbox=\box73
+\nofMPsegments=\count337
+\nofMParguments=\count338
+\everyMPshowfont=\toks48
+\MPscratchCnt=\count339
+\MPscratchDim=\dimen196
+\MPnumerator=\count340
+\makeMPintoPDFobject=\count341
+\everyMPtoPDFconversion=\toks49
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epsto
+pdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-
+sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+\c@lstlisting=\count342
+\openout2 = `./texs/000-titel.aux'.
+
+ (texs/000-titel.tex
+
+Class scrbook Warning: deprecated old font command `\bf' used.
+(scrbook)              You should note, that since 1994 LaTeX2e provides a
+(scrbook)              new font selection scheme called NFSS2 with several
+(scrbook)              new, combinable font commands. New KOMA-Script classes
+(scrbook)              defined the old font commands like `\bf' only for
+(scrbook)              compatibility with LaTeX 2.09 document styles of
+(scrbook)              Script 2.0. These commands are deprecated and
+(scrbook)              undocumented at least since 2003. Since 2013,
+(scrbook)              KOMA-Script classes warned about soon removement of
+(scrbook)              these deprecated commands. Now, after two decades of
+(scrbook)              LaTeX2e, NFSS2, and KOMA-Script these commands will
+(scrbook)              not work any longer. If loading a package results in
+(scrbook)              this message you should contact the author of that
+(scrbook)              package and ask him to replace the depracted font
+(scrbook)              command `\bf', e.g., by `\normalfont \bfseries '.
+(scrbook)              Otherwise you should reconfigure or replace the
+(scrbook)              package. If you have used the old font command
+(scrbook)              `\bf' yourself you should replace it, e.g., by
+(scrbook)              `\normalfont \bfseries ' on input line 5.
+
+
+Class scrbook Warning: deprecated old font command `\bf' used.
+(scrbook)              You should note, that since 1994 LaTeX2e provides a
+(scrbook)              new font selection scheme called NFSS2 with several
+(scrbook)              new, combinable font commands. New KOMA-Script classes
+(scrbook)              defined the old font commands like `\bf' only for
+(scrbook)              compatibility with LaTeX 2.09 document styles of
+(scrbook)              Script 2.0. These commands are deprecated and
+(scrbook)              undocumented at least since 2003. Since 2013,
+(scrbook)              KOMA-Script classes warned about soon removement of
+(scrbook)              these deprecated commands. Now, after two decades of
+(scrbook)              LaTeX2e, NFSS2, and KOMA-Script these commands will
+(scrbook)              not work any longer. If loading a package results in
+(scrbook)              this message you should contact the author of that
+(scrbook)              package and ask him to replace the depracted font
+(scrbook)              command `\bf', e.g., by `\normalfont \bfseries '.
+(scrbook)              Otherwise you should reconfigure or replace the
+(scrbook)              package. If you have used the old font command
+(scrbook)              `\bf' yourself you should replace it, e.g., by
+(scrbook)              `\normalfont \bfseries ' on input line 5.
+
+<figs/2015_10_05_THB_FB-W_Logo_RGB.jpg, id=3, 239.4546pt x 122.3772pt>
+File: figs/2015_10_05_THB_FB-W_Logo_RGB.jpg Graphic file (type jpg)
+<use figs/2015_10_05_THB_FB-W_Logo_RGB.jpg>
+Package pdftex.def Info: figs/2015_10_05_THB_FB-W_Logo_RGB.jpg  used on input l
+ine 21.
+(pdftex.def)             Requested size: 235.68695pt x 120.45044pt.
+[1
+Non-PDF special ignored!
+<special> papersize=597.50793pt,845.04694pt
+
+\openout4 = `thesis.ist'.
+
+
+
+{C:/Users/flemnitzer/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users
+/flemnitzer/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./figs/
+2015_10_05_THB_FB-W_Logo_RGB.jpg>])
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 14
+.
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1phv.fd
+File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 11.39996pt on input line 14.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 11.39996pt on input line 14.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 23.63593pt on input line 14.
+
+(thesis.toc)
+\tf@toc=\write9
+\openout9 = `thesis.toc'.
+
+LaTeX Font Info:    Trying to load font information for T1+pag on input line 18
+.
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pag.fd
+File: t1pag.fd 2001/06/04 font definitions for T1/pag.
+)
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <12> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 18.
+
+[2
+
+
+
+
+] (thesis.lof)
+\tf@lof=\write10
+\openout10 = `thesis.lof'.
+
+ [3
+
+
+] (thesis.lot)
+\tf@lot=\write11
+\openout11 = `thesis.lot'.
+
+ (thesis.acr) (thesis.gls) [4
+
+]
+\openout2 = `./texs/001-einleitung.aux'.
+
+
+(texs/001-einleitung.tex
+chapter 1.
+
+Class scrbook Warning: \float@addtolists detected!
+(scrbook)              Implementation of \float@addtolist became
+(scrbook)              deprecated in KOMA-Script v3.01 2008/11/14 and
+(scrbook)              has been replaced by several more flexible
+(scrbook)              features of package `tocbasic`.
+(scrbook)              Since Version 3.12 support for deprecated
+(scrbook)              \float@addtolist interface has been
+(scrbook)              restricted to only some of the KOMA-Script
+(scrbook)              features and been removed from others.
+(scrbook)              Loading of package `scrhack' may help to
+(scrbook)              avoid this warning, if you are using a
+(scrbook)              a package that still implements the
+(scrbook)              deprecated \float@addtolist interface.
+
+)
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.34 \include{./texs/001-einleitung.tex}
+                                         [1
+
+
+
+]
+\openout2 = `./texs/002-Problemstellung.aux'.
+
+ (texs/002-Problemstellung.tex
+chapter 2.
+) [2
+
+
+
+
+
+]
+\openout2 = `./texs/003-Ziele-und-Hypothese.aux'.
+
+ (texs/003-Ziele-und-Hypothese.tex
+chapter 3.
+) [3
+
+
+
+
+
+]
+\openout2 = `./texs/004-Forschungsstand.aux'.
+
+ (texs/004-Forschungsstand.tex
+chapter 4.
+) [4
+
+
+
+
+
+]
+\openout2 = `./texs/005-Methode.aux'.
+
+ (texs/005-Methode.tex
+chapter 5.
+) [5
+
+
+
+
+
+]
+\openout2 = `./texs/006-Ergebnisse.aux'.
+
+ (texs/006-Ergebnisse.tex
+chapter 6.
+) [6
+
+
+
+
+
+]
+\openout2 = `./texs/007-Diskussion.aux'.
+
+ (texs/007-Diskussion.tex
+chapter 7.
+) [7
+
+
+
+
+
+]
+\openout2 = `./texs/008-Fazit.aux'.
+
+ (texs/008-Fazit.tex
+chapter 8.
+) [8
+
+
+
+
+
+] (thesis.bbl
+chapter without number
+
+Package natbib Warning: Empty `thebibliography' environment on input line 8.
+
+) [9
+
+
+
+]
+\openout2 = `./texs/999-erklaerung.aux'.
+
+ (texs/999-erklaerung.tex
+<./figs/signature.png, id=86, 374.14781pt x 127.97812pt>
+File: ./figs/signature.png Graphic file (type png)
+<use ./figs/signature.png>
+Package pdftex.def Info: ./figs/signature.png  used on input line 19.
+(pdftex.def)             Requested size: 170.71393pt x 58.39221pt.
+) [10
+
+
+ <./figs/signature.png>] (thesis.aux
+(texs/000-titel.aux) (texs/001-einleitung.aux) (texs/002-Problemstellung.aux)
+(texs/003-Ziele-und-Hypothese.aux) (texs/004-Forschungsstand.aux)
+(texs/005-Methode.aux) (texs/006-Ergebnisse.aux) (texs/007-Diskussion.aux)
+(texs/008-Fazit.aux) (texs/999-erklaerung.aux))
+ ***********
+LaTeX2e <2023-11-01>
+L3 programming layer <2023-11-01>
+ ***********
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 216 (\begingroup)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 25092 strings out of 474591
+ 455728 string characters out of 5743418
+ 1930533 words of memory out of 5000000
+ 46764 multiletter control sequences out of 15000+600000
+ 584653 words of font info for 63 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 113i,11n,110p,10920b,3311s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/flemnitzer/AppData/Local/Programs/MiKTeX/fonts/type1/
+urw/avantgar/uagd8a.pfb><C:/Users/flemnitzer/AppData/Local/Programs/MiKTeX/font
+s/type1/urw/helvetic/uhvb8a.pfb><C:/Users/flemnitzer/AppData/Local/Programs/MiK
+TeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/flemnitzer/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on thesis.pdf (14 pages, 222998 bytes).
+PDF statistics:
+ 156 PDF objects out of 1000 (max. 8388607)
+ 26 named destinations out of 1000 (max. 500000)
+ 107 words of extra memory for PDF output out of 10000 (max. 10000000)
+
