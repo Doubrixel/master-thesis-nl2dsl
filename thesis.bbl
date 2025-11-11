@@ -1,8 +1,14 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{1}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{data experts gmbh}()]{dataexpertsgmbhImpressumDataExperts}
+{data experts gmbh}:
+\newblock {Impressum >> data experts gmbh}.
+\newblock \url{https://www.data-experts.de/impressum/}.
+\newblock Letzter Zugriff: 2024-02-23.
 
 \end{thebibliography}

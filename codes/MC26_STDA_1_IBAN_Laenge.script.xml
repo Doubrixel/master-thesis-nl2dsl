@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><scripts>
+  <script name="MC26_STDA_1_IBAN_Laenge"><![CDATA[@meta name: "MC26_STDA_1_IBAN_Laenge";
+
+master stda1 as #202617101;
+
+var iban = stda1->bi_IBAN@value;
+if(Strings.startsWith(iban, "DE") && Strings.length(iban) != 22) {
+    fatal [stda1->bi_IBAN]: "Die von Ihnen eingegebene IBAN hat nicht die erforderlichen 22 Stellen.": meta {errorId: "IBAN_Laenge"};
+}]]></script>
+</scripts>

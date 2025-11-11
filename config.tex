@@ -199,6 +199,8 @@
 %hierdurch wird Quellcode besser dargestellt
 \usepackage{listings}
 \renewcommand\lstlistlistingname{Quellcodeverzeichnis}
+\renewcommand{\lstlistingname}{Quellcode}
+\usepackage{xcolor}
 
 %Abkürzungsverzeichnis
 \usepackage[intoc]{nomencl}
@@ -364,15 +366,15 @@
 \newcommand{\ocTblref}[1]{\ocRef{Tabelle}{tbl:#1}}
 \newcommand{\ocPararef}[1]{\ocRef{Abschnitt}{sec:#1}}
 \newcommand{\ocChapterref}[1]{\ocRef{Kapitel}{sec:#1}}
-\newcommand{\ocLstref}[1]{\ocRef{Quelltext}{#1}}
+\newcommand{\ocLstref}[1]{\ocRef{Quellcode}{#1}}
 %\newcommand{\ocNameref}[1]{`\nameref{#1}' auf Seite~\pageref{#1}}
 
 %To-Do Befehl
-\newcommand{\todo}[1]{\textbf{\textsc{\textcolor{red}{(TODO: #1)}}}}
-\newcommand{\vera}[1]{\textbf{\textsc{\textcolor{purple}{(Frage an Vera: #1)}}}}
-\newcommand{\niels}[1]{\textbf{\textsc{\textcolor{blue}{(Frage an Niels: #1)}}}}
-\newcommand{\plannedpages}[1]{\textbf{\textsc{\textcolor{green}{(Geplante Seitenzahl: #1)}}}}
-\newcommand{\review}[1]{\textbf{\textsc{\textcolor{orange}{(Anmerkung aus Review: #1)}}}}
+\newcommand{\todo}[1]{\textbf{\textsc{\textcolor{red}{(TODO: #1)\\}}}}
+\newcommand{\vera}[1]{\textbf{\textsc{\textcolor{purple}{(Frage an Vera: #1)\\}}}}
+\newcommand{\niels}[1]{\textbf{\textsc{\textcolor{blue}{(Frage an Niels: #1)\\}}}}
+\newcommand{\plannedpages}[1]{\textbf{\textsc{\textcolor{green}{(Geplante Seitenzahl: #1)\\}}}}
+\newcommand{\review}[1]{\textbf{\textsc{\textcolor{orange}{(Anmerkung aus Review: #1)\\}}}}
 
 \setlength\fboxsep{0.5pt}
 \setlength\fboxrule{0.3pt}

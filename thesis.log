@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2024.2.23)  10 NOV 2025 13:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2024.2.23)  10 NOV 2025 21:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1001,6 +1001,27 @@ File: listings.cfg 2023/02/27 1.9 listings configuration
 ))
 Package: listings 2023/02/27 1.9 (Carsten Heinz)
 
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color
+.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+LaTeX Info: Redefining \color on input line 711.
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor
+.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+)
 (C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/nomencl\nomencl.st
 y
 Package: nomencl 2021/11/10 v5.6 Nomenclature package
@@ -1278,15 +1299,15 @@ Package: glossary-tree 2023/09/29 v4.53 (NLCT)
 \glo@main@file=\write5
 \openout5 = `thesis.glo'.
 
-Package glossaries Info: Writing glossary file thesis.glo on input line 210.
+Package glossaries Info: Writing glossary file thesis.glo on input line 212.
 \glo@acronym@file=\write6
 \openout6 = `thesis.acn'.
 
-Package glossaries Info: Writing glossary file thesis.acn on input line 210.
+Package glossaries Info: Writing glossary file thesis.acn on input line 212.
 \@nomenclaturefile=\write7
 \openout7 = `thesis.nlo'.
 
-Package nomencl Info: Writing nomenclature file thesis.nlo on input line 243.
+Package nomencl Info: Writing nomenclature file thesis.nlo on input line 245.
 
 
 Class scrbook Warning: Usage of package `fancyhdr' together
@@ -1300,7 +1321,7 @@ Class scrbook Warning: Usage of package `fancyhdr' together
 (scrbook)              `\addtokomafont' for the page style elements need
 (scrbook)              explicite user intervention to work.
 (scrbook)              Nevertheless, using requested
-(scrbook)              package `fancyhdr' on input line 256.
+(scrbook)              package `fancyhdr' on input line 258.
 
 
 (C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.
@@ -1321,13 +1342,13 @@ Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
 less.
 (fancyhdr)                Please consider using the `twoside' option on input l
-ine 268.
+ine 270.
 
 
 Package fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
 less.
 (fancyhdr)                Please consider using the `twoside' option on input l
-ine 278.
+ine 280.
 
 
 (C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.
@@ -1540,19 +1561,50 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 23.63593pt on input line 14.
 
-(thesis.toc)
+(thesis.toc
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 8
+.
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ppl.fd
+File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
+)
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 
+8.
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlzplm.fd
+File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 
+8.
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omszplm.fd
+File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 
+8.
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxzplm.fd
+File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
+)
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 8
+.
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/stmaryrd\ustmry.fd
+)
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
+8.
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1zplm.fd
+File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+))
 \tf@toc=\write9
 \openout9 = `thesis.toc'.
 
 LaTeX Font Info:    Trying to load font information for T1+pag on input line 18
 .
-
-(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pag.fd
+ (C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pag.fd
 File: t1pag.fd 2001/06/04 font definitions for T1/pag.
 )
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <12> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 18.
-
 [2
 
 
@@ -1569,14 +1621,24 @@ LaTeX Font Info:    Font shape `T1/pag/b/n' in size <12> not available
 \tf@lot=\write11
 \openout11 = `thesis.lot'.
 
- (thesis.acr) (thesis.gls) [4
+
+
+Class scrbook Warning: \float@listhead detected!
+(scrbook)              Implementation of \float@listhead became
+(scrbook)              deprecated in KOMA-Script v3.01 2008/11/14 and
+(scrbook)              has been replaced by several more flexible
+(scrbook)              features of package `tocbasic`.
+(scrbook)              Maybe implementation of \float@listhead will
+(scrbook)              be removed from KOMA-Script soon.
+(scrbook)              Loading of package `scrhack' may help to
+(scrbook)              avoid this warning, if you are using a
+(scrbook)              a package that still implements the
+(scrbook)              deprecated \float@listhead interface on input line 23.
+
+[4
 
 ]
-\openout2 = `./texs/001-einleitung.aux'.
-
-
-(texs/001-einleitung.tex
-chapter 1.
+chapter without number
 
 Class scrbook Warning: \float@addtolists detected!
 (scrbook)              Implementation of \float@addtolist became
@@ -1592,12 +1654,26 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface.
 
+(thesis.lol)
+\tf@lol=\write12
+\openout12 = `thesis.lol'.
+
+ (thesis.acr [5
+
+]) (thesis.gls) [6
+
+
+]
+\openout2 = `./texs/001-einleitung.aux'.
+
+ (texs/001-einleitung.tex
+chapter 1.
 )
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 \include{./texs/001-einleitung.tex}
+l.35 \include{./texs/001-einleitung.tex}
                                          [1
 
 
@@ -1607,18 +1683,54 @@ l.34 \include{./texs/001-einleitung.tex}
 
  (texs/002-Problemstellung.tex
 chapter 2.
-) [2
+
+Overfull \hbox (7.36357pt too wide) in paragraph at lines 7--8
+[]\T1/ppl/m/n/12 Der Web-cli-ent er-leich-tert das Aus-fül-len der For-mu-la-re
+ durch ei-ne Live-Validierung
+ []
+
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 16.41594pt on input line 11.
+
+Overfull \hbox (5.36317pt too wide) in paragraph at lines 12--13
+\T1/ppl/m/n/12 mu-lar-ver-wal-ter fol-gen-de Ei-gen-schaf-ten de-fi-niert: Na-m
+e, Feh-ler-text, Be-schrei-bung,
+ []
+
+[2
 
 
 
 
 
-]
+] [3]
+Overfull \hbox (14.64828pt too wide) in paragraph at lines 44--47
+\T1/ppl/m/it/12 Mecklemburg-Vorpommern Agrar-Antrag 2026, Mecklemburg-Vorpommer
+n ELER-Antrag
+ []
+
+[4]
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.
+sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+)
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.s
+ty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 51.
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 5
+2.
+
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+)) [5]
 \openout2 = `./texs/003-Ziele-und-Hypothese.aux'.
 
  (texs/003-Ziele-und-Hypothese.tex
 chapter 3.
-) [3
+) [6
 
 
 
@@ -1629,7 +1741,7 @@ chapter 3.
 
  (texs/004-Forschungsstand.tex
 chapter 4.
-) [4
+) [7
 
 
 
@@ -1640,7 +1752,7 @@ chapter 4.
 
  (texs/005-Methode.tex
 chapter 5.
-) [5
+) [8
 
 
 
@@ -1651,7 +1763,7 @@ chapter 5.
 
  (texs/006-Ergebnisse.tex
 chapter 6.
-) [6
+) [9
 
 
 
@@ -1662,7 +1774,7 @@ chapter 6.
 
  (texs/007-Diskussion.tex
 chapter 7.
-) [7
+) [10
 
 
 
@@ -1673,7 +1785,7 @@ chapter 7.
 
  (texs/008-Fazit.tex
 chapter 8.
-) [8
+) [11
 
 
 
@@ -1681,10 +1793,12 @@ chapter 8.
 
 ] (thesis.bbl
 chapter without number
-
-Package natbib Warning: Empty `thebibliography' environment on input line 8.
-
-) [9
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 11
+.
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+))
+[12
 
 
 
@@ -1692,12 +1806,12 @@ Package natbib Warning: Empty `thebibliography' environment on input line 8.
 \openout2 = `./texs/999-erklaerung.aux'.
 
  (texs/999-erklaerung.tex
-<./figs/signature.png, id=86, 374.14781pt x 127.97812pt>
+<./figs/signature.png, id=160, 374.14781pt x 127.97812pt>
 File: ./figs/signature.png Graphic file (type png)
 <use ./figs/signature.png>
 Package pdftex.def Info: ./figs/signature.png  used on input line 19.
 (pdftex.def)             Requested size: 170.71393pt x 58.39221pt.
-) [10
+) [13
 
 
  <./figs/signature.png>] (thesis.aux
@@ -1714,24 +1828,30 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
  )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 216 (\begingroup)
+### semi simple group (level 1) entered at line 218 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 25092 strings out of 474591
- 455728 string characters out of 5743418
- 1930533 words of memory out of 5000000
- 46764 multiletter control sequences out of 15000+600000
- 584653 words of font info for 63 fonts, out of 8000000 for 9000
+ 26154 strings out of 474591
+ 470053 string characters out of 5743418
+ 1944533 words of memory out of 5000000
+ 47725 multiletter control sequences out of 15000+600000
+ 607493 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,11n,110p,10920b,3311s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/flemnitzer/AppData/Local/Programs/MiKTeX/fonts/type1/
-urw/avantgar/uagd8a.pfb><C:/Users/flemnitzer/AppData/Local/Programs/MiKTeX/font
-s/type1/urw/helvetic/uhvb8a.pfb><C:/Users/flemnitzer/AppData/Local/Programs/MiK
-TeX/fonts/type1/urw/palatino/uplb8a.pfb><C:/Users/flemnitzer/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on thesis.pdf (14 pages, 222998 bytes).
+ 113i,11n,110p,10920b,4201s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
+, replaced by a fixed one
+
+<C:/Users/flemnitzer/AppData/Local/Programs/MiKTeX/fonts/type1/urw/avantgar/uag
+d8a.pfb><C:/Users/flemnitzer/AppData/Local/Programs/MiKTeX/fonts/type1/urw/cour
+ier/ucrr8a.pfb><C:/Users/flemnitzer/AppData/Local/Programs/MiKTeX/fonts/type1/u
+rw/helvetic/uhvb8a.pfb><C:/Users/flemnitzer/AppData/Local/Programs/MiKTeX/fonts
+/type1/urw/palatino/uplb8a.pfb><C:/Users/flemnitzer/AppData/Local/Programs/MiKT
+eX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/flemnitzer/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on thesis.pdf (19 pages, 277977 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
- 26 named destinations out of 1000 (max. 500000)
- 107 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 260 PDF objects out of 1000 (max. 8388607)
+ 67 named destinations out of 1000 (max. 500000)
+ 139 words of extra memory for PDF output out of 10000 (max. 10000000)
 
