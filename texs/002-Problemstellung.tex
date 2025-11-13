@@ -1,67 +1,62 @@
 \chapter{Problemstellung}
 \plannedpages{3 - 6 | T: 16.11.25}
+\note{
+Welches konkrete Praxisproblem existiert heute beim Übersetzen natürlichsprachlicher Prüfungslogik in DSL-Skripte?
 
-Die \gls{deg}\footnote{Bei der Kleinschreibung des Namens handelt es sich um ein Stilmittel \citep[vgl.][]{dataexpertsgmbhImpressumDataExperts}.} produziert einen Webclient, mit dem Landwirte Fördermittel beantragen können.
-In diesem füllen Anwender Antragsformulare aus und hinterlegen Flächendaten im \glspl{gis}, um Fördermittel zu beantragen. 
+Welche Stakeholder haben welches Interesse und welche Anforderungen?
 
-Der Webclient erleichtert das Ausfüllen der Formulare durch eine Live-Validierung der Antragsdaten. Er gibt eine Meldung aus, wenn die Datenkonstellation bestimmte Bedingungen erfüllt. Die Meldungen enthalten Bearbeitungshinweise oder Fehlermeldungen, die Antragsteller dabei unterstützen, inhaltlich korrekte Anträge einzureichen.
+Welche Nachteile haben vorhandene Workflows?
 
-Die Live-Validierungen werden von den Autraggebern definiert. Dafür verwenden sie den sogenannten Formularverwalter. In diesem werden neben den Live-Validierungen Vorgaben wie Einreichzeiträume, Formularlayouts und Vortragealgorithmen erfasst.
+Warum sind existierende technische Lösungen unzureichend (konkret für KI/DSL/Forms)?
 
-\section{Plausibilitätsprüfungen}
-Für eine Live-Validierung (auch Plausibilitätsprüfung genannt) werden im Formularverwalter folgende Eigenschaften definiert: Name, Fehlertext, Beschreibung, Fehlerlevel und verknüpfte Formulare und Antragsverfahren.
+Welche Folgen hat das Problem?
 
-\subsubsection{Name}
-Der Name ist der Bezeichner der Vorgabe. Er ist nicht eindeutig -- es kann mehrere Vorgaben mit dem gleichen Namen geben. Die Auftraggeber sind dazu aufgefordert die Namen technisch auswertbar zu gestalten, indem sie auf die Verwendung von Umlauten, Sonderzeichen und Leerzeichen im Namen verzichten. Das wird nicht erzwungen und deshalb nicht bei allen Vorgaben berücksichtigt. 
+Welche Annahmen liegen der Problemformulierung zugrunde?
+}
 
-Beispiel: \emph{IBAN\_Laenge}
+Die \gls{deg}\footnote{Bei der Kleinschreibung des Namens handelt es sich um ein Stilmittel \citep[vgl.][]{dataexpertsgmbhImpressumDataExperts}.} entwickelt einen Webclient, über den Landwirte Fördermittel beantragen können.
+Dafür füllen sie Antragsformulare aus und hinterlegen Flächendaten im \glspl{gis}. 
 
-\subsubsection{Fehlertext}
-In diesem Feld wird der Text eingetragen, der dem Anwender angezeigt werden soll. Meistens wird genau der Text dem Anwender angezeigt. Manchmal werden Platzhalter verwendet. Wie diese zu ersetzen sind, geht meistens aus der Beschreibung hervor.
+Der Webclient erleichtert das Ausfüllen der Formulare durch eine Live-Va\-li\-die\-rung der Antragsdaten. Er gibt Meldungen aus, wenn die Datenkonstellation bestimmte Bedingungen erfüllt. Diese enthalten Bearbeitungshinweise oder Fehlermeldungen, die Antragsteller dabei unterstützen, inhaltlich korrekte Anträge einzureichen.
 
-Beispiel: \emph{Die von Ihnen eingegebene IBAN hat nicht die erforderlichen 22 Stellen.}
+\beispiel{Wenn eine deutsche IBAN angegeben wird, dann muss diese 22 Stellen haben. Sonst wird dem Anwender folgende Fehlermeldung ausgegeben: \glqq{}Die von Ihnen eingegebene IBAN hat nicht die erforderlichen 22 Stellen.\grqq{} }
 
-\subsubsection{Beschreibung}
-Die Beschreibung enthält die Logik, die bestimmt, unter welchen Bedingungen die Meldung ausgegeben werden soll. Die Logik wird in natürlicher Sprache beschrieben. Die Qualität der Beschreibungen variiert stark -- abhängig von der Komplexität der Prüfung und dem Hintergrund des Autors.
+\section{Live-Validierungen}
 
-In der Beschreibung können Felder aus den Verknüpften Formularen referenziert werden. Wenn das gemacht wird, kann die Referenz technisch zu einem Feld im Formular zugeordnet werden. In manchen Fällen wird nur der technische Bezeichner eines Formularfeldes (wie \emph{bi\_iban} im unten stehenden Beispiel) oder nur eine natürlichsprachliche Umschreibung (bspw. \glqq{}In der ersten Spalte der Tabelle\grqq{}) verwendet.
+Die Live-Validierungen werden von den Auftraggebern definiert. Dafür verwenden sie den sogenannten Formularverwalter. Im Formularverwalter können sie Formulare gestalten und Vorgaben zur Verarbeitung der Daten machen (z. B. Einreichzeiträume, Vortragen von Daten, Schnittstellen, Validierungen und weitere).
 
-Beispiel \emph{bi\_iban: Wenn es sich um eine DE - IBAN handelt, muss sie incl. DE genau 22 Zeichen lang sein.}
+Die Validierungslogik wird in natürlicher Sprache erfasst. Dadurch können die Auftraggeber der \gls{deg} Validierungen beauftragen, ohne dass sie ein technisches Verständnis benötigen. Anschließend wird die Logik von einem Entwickler der \gls{deg} in Form eines Skriptes abgebildet. Die Skripte werden in der \glspl{dsl}  \glqq{}formScript\grqq{} entwickelt -- eine Skriptsprache der \gls{deg}, die speziell zur performanten Auswertung und Manipulation von Formulardaten geschaffen wurde. Diese Skripte werden dann vom Webclient während der Bearbeitung des Antrags ausgeführt, um die Daten live zu validieren.
 
-\subsubsection{Fehlerlevel}
-Das Fehlerlevel ist der Schweregrad der Prüfung. Es reicht von Hinweis bis Disqualifikation. Es wird über ein Auswahlfeld im Formularverwalter erfasst. Es ist dadurch eindeutig und technisch auswertbar. Es gibt 5 Level:
+\section{Durchlaufzeiten}
+Der Zeitraum zur Beantragung von Agrarfördermitteln geht von März bis Mai. Zwischen dem Anfang des Jahres und dem Beginn der Antragstellung nehmen die Auftraggeber viele Veränderungen an den Vorgaben vor. Im ersten Quartal des Jahres beauftragen sie durchschnittlich über 300 Mal Anpassungen an Formularen oder zugehörigen Vorgaben. Durch diese erhöhte Arbeitslast steigt die Durchlaufzeit von der Beauftragung bis zur Auslieferung. 
+
+\beispiel{Die validen Erstantragsjahre für unterschiedliche Förderprogramme ändern sich jedes Jahr. In der Validierungs-Vorgabe \glqq{}EAJ\_Prüfung\grqq{} und im zugehörigen Skript mussten die Jahreszahlen angepasst werden. Das ist eine kleine Anpassung, die am 04.12.2024 beauftragt und am 07.02.2025 ausgeliefert wurde.}
+
+In den Wochen vor Beginn der Antragstellung fallen lange Durchlaufzeiten negativ auf. Sie führen dazu, dass das Programm erst spät getestet werden kann. Schwerwiegende Fehler, die erst kurz vor der Antragstellung auffallen, haben in der Vergangenheit bereits dazu geführt, dass das Einreichen von Anträgen zunächst gesperrt werden musste, bis die \gls{deg} eine Fehlerkorrektur ausliefern konnte.
+
+\section{Automatische Übernahme}
+Um die Verzögerungen zu reduzieren, wurde bereits für einige Arten von Vorgaben eine automatische Übernahme vom Formularverwalter in den Programmcode ermöglicht. Einreichzeiträume werden beispielsweise in Form von zwei Da\-tums-Fel\-dern definiert und auch bei Schnittstellenbeschreibungen wird eine technisch auswertbare Form erzwungen.
+
+Den Auftraggebern wurde ein Werkzeug angeboten, mit dem sie selbst eine technisch auswertbare Repräsentation hätten erstellen können. Es hätte die grafische Programmierung von Validierungslogik ermöglicht. Dieses wurde abgelehnt, mit der Begründung, dass es für die Auftraggeber zu komplex sei, die Validierungslogik konfigurativ abzubilden. \vera{Sollte ich hier ein internes Beratungsprotokoll als Quelle anfügen?}
+
+Automatische Übernahmen funktionieren nur, wenn Vorgaben technisch strukturiert vorliegen (z. B. Datumsfelder). Validierungsregeln liegen in natürlicher Sprache vor und sind fachsprachlich und inkonsistent formuliert. Hinzu kommt die proprietäre DSL mit spezifischer Semantik. Bisher existiert kein Verfahren, das die in natürlicher Sprache formulierte Validierungslogik automatisch in die proprietäre \gls{dsl} des Webclients überträgt. Ob \gls{ki}-gestützte Verfahren hierfür geeignet sind, ist Gegenstand dieser Arbeit.
+
+Von einer automatisierten Übernahme von Validierungs-Vorgaben wären folgende Interessensgruppen betroffen:
 \begin{description}
-	\item[Information, Warnung, Fehler] Diese Level sind rein informativ. Die Meldungen werden angezeigt, schränken die Bearbeitung aber nicht weiter ein.
-	\item[Fataler Fehler] Enthält der Antrag ein Formular mit einem fatalen Fehler, kann er nicht eingereicht werden.
-	\item[Disqualifikation] Ein Disqualifikationsfehler schließt ein Formular vom Antrag aus. Der Antrag kann eingereicht werden, aber das entsprechende Formular wird nicht mit eingereicht.
+	\item[Auftraggeber] Die Auftraggeber der \gls{deg} wollen ihre Vorgaben weiterhin in natürlicher Sprache erfassen, da ihnen andere Repräsentationen einer Prüflogik zu komplex sind. Sie wünschen sich schnellere Durchlaufzeiten, damit sie ihre Anpassungen früh genug im Programm testen können.
+	\item[Entwickler] Eine automatische Übernahme von Vorgaben entlastet Entwickler. Für den Fall, dass manuelle Anpassungen notwendig sind, muss die Wartbarkeit erhalten bleiben.
+	\item[Qualitätssicherung] Wenn mehr Vorgaben automatisiert übernommen werden, bedeutet das eine erhöhte Last für die Qualitätssicherung, da auch die automatisch übernommenen Vorgaben getestet werden. Die Fehlerquote der automatischen Übernahme sollte deshalb gleich oder geringer als die der manuellen Entwicklung sein.
 \end{description}
 
-Beispiel: \emph{Fataler Fehler}
+Daraus ergibt sich folgende Problemstellung: \\
+\emph{Die Validierungslogik soll automatisch in den Webclient übernommen werden können, ohne das Erfassen der Logik für die Auftraggeber zu verkomplizieren.}
 
-\subsubsection{verknüpfte Formulare und Antragsverfahren}
-Eine Plausi-Vorgabe ist mit den Antragsverfahren verknüpft, für die sie gelten soll. Und sie ist mit den Formularen Verknüpft, auf die für die Prüfung zugegriffen werden muss. 
+Die Problemstellung basiert auf folgenden Annahmen:
+\begin{enumerate}
+	\item Die natürlichsprachlichen Beschreibungen der Auftraggeber sind sprachlich uneinheitlich. Inhaltlich sind sie jedoch eindeutig genug, um korrekt umgesetzt zu werden.
+	\item Die Zielsprache ist eine proprietäre Skriptsprache. Sie hat klar definierte Syntax und Semantik und kann prinzipiell automatisch erzeugt werden.
+	\item Die Erfassung der Validierungslogik muss zwingend durch die Auftraggeber erfolgen, da sie die fachliche Verantwortung für die digitalen Antragsformulare tragen. Eine direkte Umsetzung durch Entwickler ohne vorliegende Anforderung ist weder organisatorisch noch inhaltlich möglich.
+	\item Die Qualität der automatischen Übersetzung muss so hoch sein, dass die zusätzliche Prüf- und Testlast akzeptabel bleibt.
+\end{enumerate}
 
-Beispiel: \\
-\emph{Antragsverfahren: Brandenburg Agrar-Antrag 2026, Brandenburg ELER-Antrag 2026, Mecklemburg-Vorpommern Agrar-Antrag 2026, Mecklemburg-Vorpommern ELER-Antrag 2026, Schleswig Holstein Agrar-Antrag 2026}\\
-\emph{Dokument: Stammdaten}
-
-\section{Implementierung}
-Diese Vorgaben werden von der data experts mit Hilfe der proprietären Skriptsprache \glqq{}formScript\grqq{} implementiert. Diese ist für die Verarbeitung und Manipulation von Formulardaten geschaffen worden. Diese Skripte werden als \gls{xml}-Dateien im Quellcode hinterlegt. Zur Compile-Zeit werden sie zu Java-Code übersetzt. \ocLstref{iban-laenge} ist das Skript zu der Vorgabe \glqq{}IBAN\_Laenge\grqq{}, die oben als Beispiel verwendet wurde.
-
-\begin{lstlisting}[language=xml, caption={IBAN\_Laenge Skript}, label=iban-laenge]
-<?xml version="1.0" encoding="UTF-8"?><scripts>
-<script name="MC26_STDA_1_IBAN_Laenge"><![CDATA[
-@meta name: "MC26_STDA_1_IBAN_Laenge";
-
-master stda1 as #202617101;
-
-var iban = stda1->bi_IBAN@value;
-if(Strings.startsWith(iban, "DE") 
-   && Strings.length(iban) != 22) {
-	fatal [stda1->bi_IBAN]
-	: "Die von Ihnen eingegebene IBAN hat nicht die 
-		erforderlichen 22 Stellen."
-	: meta {errorId: "IBAN_Laenge"};
-}]]></script>
-</scripts>
-\end{lstlisting}
+Vor diesem Hintergrund untersucht die vorliegende Arbeit, ob und unter welchen Bedingungen KI-gestützte Verfahren geeignet sind, die beschriebene Übersetzungsaufgabe zuverlässig zu automatisieren. Die konkreten Forschungsfragen, Hypothesen und Zielgrößen werden im nächsten Kapitel definiert.

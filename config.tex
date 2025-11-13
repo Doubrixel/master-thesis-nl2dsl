@@ -58,7 +58,6 @@
   %leqno,           	% Formelnummern links
   fleqn,            	% Formeln werden linksbuendig angezeigt
 ] {scrbook}						% Klassen: scrartcl, scrreprt, scrbook
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Einbinden von neuen Paketen%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -131,8 +130,7 @@
 
 
 % für wichtig-box ..
-\usepackage{fancybox}
-\usepackage{marvosym}
+
 
 
 %\newenvironment{important}{
@@ -194,7 +192,9 @@
 %\usepackage{/picins}
 
 %durch dieses Paket werden die Farbnamen definiert
+
 \usepackage[usenames]{color}
+
 
 %hierdurch wird Quellcode besser dargestellt
 \usepackage{listings}
@@ -375,6 +375,39 @@
 \newcommand{\niels}[1]{\textbf{\textsc{\textcolor{blue}{(Frage an Niels: #1)\\}}}}
 \newcommand{\plannedpages}[1]{\textbf{\textsc{\textcolor{green}{(Geplante Seitenzahl: #1)\\}}}}
 \newcommand{\review}[1]{\textbf{\textsc{\textcolor{orange}{(Anmerkung aus Review: #1)\\}}}}
+
+\newboolean{shownotes}
+\setboolean{shownotes}{true}
+
+\newcommand{\note}[1]{%
+	\ifthenelse{\boolean{shownotes}}{%
+		{\colorbox{gray!10}{%
+			\parbox{1\linewidth}{	
+					\linespread{1}\selectfont   % etwas mehr Zeilenabstand
+					\setlength{\parskip}{6pt}
+					\ttfamily 
+					Leitfragen
+					
+					\footnotesize
+					#1
+				}%
+			}%
+		}%
+	}{}%
+}
+
+\newcommand{\beispiel}[1]{%
+	\noindent
+	\setlength{\fboxsep}{6pt} % Abstand zwischen Text und Rahmen
+	\fcolorbox{black}{gray!10}{%
+		\parbox{\dimexpr\linewidth-2\fboxsep-2\fboxrule}{%
+			\textbf{Beispiel:} #1
+		}%
+	}%
+}
+
+% Benutzung:
+%\beispiel{Dies ist ein Beispieltext ohne zusätzliche Pakete.}
 
 \setlength\fboxsep{0.5pt}
 \setlength\fboxrule{0.3pt}

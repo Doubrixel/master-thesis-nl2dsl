@@ -1,2 +1,79 @@
 \chapter{Methode}
 \plannedpages{9 - 12 | T: 04.01.26}
+\note{
+Welchen methodischen Ansatz wählst du (gestaltungsorientiert: Design Science, Prototyping, Mixed-Methods, Usability-Testing)?
+
+Welche Artefakte wirst du entwerfen (DSL-Erweiterung, Konversionspipeline, Nutzerinterface, Evaluationsskripte)?
+
+Welche Datengrundlage verwendest du (Anwendungsfälle, Formularbeispiele, Annotatoren, synthetische Daten)?
+
+Wie sieht der Entwicklungsworkflow aus (Iterationen, Validationsschritte, Tools, Versionierung)?
+
+Welche KI-Modelle und Prompt-/Fine-tuning-Strategien werden eingesetzt?
+
+Welche Metriken und Messmethoden nutzt du zur Bewertung (Precision/Recall, BLEU/ROUGE ungeeignet? — nenne passendere Metriken: Genauigkeit der Regelübersetzung, menschliche Lesbarkeit, Zeitaufwand)?
+
+Welche Nutzerstudien oder Experten-Reviews planst du (Anzahl, Auswahlkriterien, Aufgaben, Messinstrumente)?
+
+Wie stellst du Reproduzierbarkeit und Validität sicher (Artefakte, Skripte, Protokolle, Datenschutz)?
+
+Welche ethischen und rechtlichen Fragen beachtest du (Bias, Datenherkunft, Verarbeitung personenbezogener Daten)?
+}
+
+\section{Plausibilitätsprüfungen}
+Für eine Live-Validierung (auch Plausibilitätsprüfung genannt) werden im Formularverwalter folgende Eigenschaften definiert: Name, Fehlertext, Beschreibung, Fehlerlevel und verknüpfte Formulare und Antragsverfahren.
+
+\subsubsection{Name}
+Der Name ist der Bezeichner der Vorgabe. Er ist nicht eindeutig -- es kann mehrere Vorgaben mit dem gleichen Namen geben. Die Auftraggeber sind dazu aufgefordert die Namen technisch auswertbar zu gestalten, indem sie auf die Verwendung von Umlauten, Sonderzeichen und Leerzeichen im Namen verzichten. Das wird nicht erzwungen und deshalb nicht bei allen Vorgaben berücksichtigt. 
+
+Beispiel: \emph{IBAN\_Laenge}
+
+\subsubsection{Fehlertext}
+In diesem Feld wird der Text eingetragen, der dem Anwender angezeigt werden soll. Meistens wird genau der Text dem Anwender angezeigt. Manchmal werden Platzhalter verwendet. Wie diese zu ersetzen sind, geht meistens aus der Beschreibung hervor.
+
+Beispiel: \emph{Die von Ihnen eingegebene IBAN hat nicht die erforderlichen 22 Stellen.}
+
+\subsubsection{Beschreibung}
+Die Beschreibung enthält die Logik, die bestimmt, unter welchen Bedingungen die Meldung ausgegeben werden soll. Die Logik wird in natürlicher Sprache beschrieben. Die Qualität der Beschreibungen variiert stark -- abhängig von der Komplexität der Prüfung und dem Hintergrund des Autors.
+
+In der Beschreibung können Felder aus den Verknüpften Formularen referenziert werden. Wenn das gemacht wird, kann die Referenz technisch zu einem Feld im Formular zugeordnet werden. In manchen Fällen wird nur der technische Bezeichner eines Formularfeldes (wie \emph{bi\_iban} im unten stehenden Beispiel) oder nur eine natürlichsprachliche Umschreibung (bspw. \glqq{}In der ersten Spalte der Tabelle\grqq{}) verwendet.
+
+Beispiel \emph{bi\_iban: Wenn es sich um eine DE - IBAN handelt, muss sie incl. DE genau 22 Zeichen lang sein.}
+
+\subsubsection{Fehlerlevel}
+Das Fehlerlevel ist der Schweregrad der Prüfung. Es reicht von Hinweis bis Disqualifikation. Es wird über ein Auswahlfeld im Formularverwalter erfasst. Es ist dadurch eindeutig und technisch auswertbar. Es gibt 5 Level:
+\begin{description}
+	\item[Information, Warnung, Fehler] Diese Level sind rein informativ. Die Meldungen werden angezeigt, schränken die Bearbeitung aber nicht weiter ein.
+	\item[Fataler Fehler] Enthält der Antrag ein Formular mit einem fatalen Fehler, kann er nicht eingereicht werden.
+	\item[Disqualifikation] Ein Disqualifikationsfehler schließt ein Formular vom Antrag aus. Der Antrag kann eingereicht werden, aber das entsprechende Formular wird nicht mit eingereicht.
+\end{description}
+
+Beispiel: \emph{Fataler Fehler}
+
+\subsubsection{verknüpfte Formulare und Antragsverfahren}
+Eine Plausi-Vorgabe ist mit den Antragsverfahren verknüpft, für die sie gelten soll. Und sie ist mit den Formularen Verknüpft, auf die für die Prüfung zugegriffen werden muss. 
+
+Beispiel: \\
+\emph{Antragsverfahren: Brandenburg Agrar-Antrag 2026, Brandenburg ELER-Antrag 2026, Mecklemburg-Vorpommern Agrar-Antrag 2026, Mecklemburg-Vorpommern ELER-Antrag 2026, Schleswig Holstein Agrar-Antrag 2026}\\
+\emph{Dokument: Stammdaten}
+
+\section{Implementierung}
+Diese Vorgaben werden von der data experts mit Hilfe der proprietären Skriptsprache \glqq{}formScript\grqq{} implementiert. Diese ist für die Verarbeitung und Manipulation von Formulardaten geschaffen worden. Die Skripte werden als \gls{xml}-Dateien im Quellcode hinterlegt. Zur Compile-Zeit werden sie zu Java-Code übersetzt. \ocLstref{iban-laenge} ist das Skript zu der Vorgabe \glqq{}IBAN\_Laenge\grqq{}, die oben als Beispiel verwendet wurde.
+
+\begin{lstlisting}[language=xml, caption={IBAN\_Laenge Skript}, label=iban-laenge]
+	<?xml version="1.0" encoding="UTF-8"?><scripts>
+	<script name="MC26_STDA_1_IBAN_Laenge"><![CDATA[
+	@meta name: "MC26_STDA_1_IBAN_Laenge";
+	
+	master stda1 as #202617101;
+	
+	var iban = stda1->bi_IBAN@value;
+	if(Strings.startsWith(iban, "DE") 
+	&& Strings.length(iban) != 22) {
+		fatal [stda1->bi_IBAN]
+		: "Die von Ihnen eingegebene IBAN hat nicht die 
+		erforderlichen 22 Stellen."
+		: meta {errorId: "IBAN_Laenge"};
+	}]]></script>
+	</scripts>
+\end{lstlisting}
