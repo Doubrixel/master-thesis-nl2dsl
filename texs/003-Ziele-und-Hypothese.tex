@@ -1,4 +1,4 @@
-\chapter{Ziele und Hypothese}
+\chapter{Ziele}
 \plannedpages{3 - 6 | T: 23.11.25}
 \note{
 Was sind die operativen Ziele der Arbeit (z. B. Prototyp, Evaluationskriterien, Metriken)?
@@ -11,3 +11,83 @@ Welche Nebenbedingungen gelten (z. B. verwendete DSL, Datengrundlage, Datenschut
 
 Welche Annahmen werden explizit getroffen und wie werden sie überprüft?
 }
+
+Im Zentrum dieser Arbeit steht das Generieren eines veränderten Skriptes. Auf Basis einer angepassten Kundenvorgabe.
+Dafür wird explorativ untersucht, mit welchen \gls{ki}-Ansätzen die Änderung der Kundenvorgaben am präzisesten in Skripte übersetzt werden können. 
+ 
+Dabei werden verschiedene Modelle, Prompting-Methoden und Kontextinformationen getestet, um die Auswirkungen auf Kompilierbarkeit, Testfall-Erfolg und Codequalität zu bewerten.
+
+\section{Forschungsziele}
+Welche Konfiguration aus Prompting-Methode, KI-Modell und Kontextinformationen (\glqq{}Prototyp\grqq{}) erzielt bei der Anpassung von Skripten auf Basis von Kundenvorgaben die höchste syntaktische und semantische Korrektheit?
+
+Zur Beantwortung der Forschungsfrage sollen folgende Hypothesen überprüft werden:
+\begin{enumerate}
+	\item Teurere OpenAI Modelle, liefern bessere syntaktische und semantische Korrektheit sowie geringere Komplexität als günstigere.
+	\item Mehr Beispiele im Kontext erhöhen die syntaktische Korrektheit.
+	\item Relevante Formulardefinitionen im Kontext erhöhen die semantische Korrektheit.
+	\item API und JDOC im Kontext erhöhen die syntaktische und semantische Korrektheit und verringern die Komplexität.
+	\item Chain-of-Thought-Prompting verbessert die Korrektheit von non-reasoning Modellen.
+\end{enumerate}
+
+\section{Operative Ziele}
+In der Arbeit sollen drei Artefakte entstehen: Testdatensatz-Sammlung, Evaluations-Pipeline und Prototypen.
+\subsection{Testdatensatz-Sammlung}
+ Es soll eine Testdatensatz-Sammlung entstehen, die mindestens 30 \todo{Quelle raussuchen, warum 30 die magische Untergrenze ist} hat. Ein Testdatensatz in dieser Sammlung soll enthalten:
+	\begin{itemize}
+		\item Die Kundenvorgabe vor der Anpassung
+		\item Die Kundenvorgabe nach der Anpassung
+		\item Das Skript vor der Anpassung
+		\item Das Skript nach der Anpassung (Referenzwahrheit)
+		\item Teststories, die das Skript nach der Anpassung validieren
+	\end{itemize}
+	
+\subsection{Evaluations-Pipeline}
+Diese Pipeline soll für jeden Eintrag in der Testdatensatz-Sammlung mit einer Prompting-Methode von einem KI-Modell das \glqq{}Skript nach der Anpassung generieren\grqq{} lassen. Die generierten Skripte sollen evaluiert und ein Bericht über die Ergebnisse erstellt werden.
+
+Der Bericht soll folgende Metriken enthalten:
+\begin{description}
+	\item[Syntaktische Korrektheit] Ein Skript ist syntaktisch korrekt, wenn es kompilierbar ist.
+	\item[Semantische Korrektheit] Ein Skript ist semantisch korrekt, wenn es alle Testfälle erfüllt.
+	\item[Komplexität] Komplexität des Skriptes im Verglich zur Referenzwahrheit.
+	\item[Kosten] Preis (in Euro) für die Generierung eines Skriptes.
+\end{description}
+
+\subsection{Prototypen}
+Ein Tripel aus Prompting-Methode, KI-Modell und Kontext-Information stellt einen Prototypen dar.
+
+Im folgenden sind die Varianten der einzelnen Bestandteile aufgelistet, die zu Prototypen kombiniert werden sollen:
+\subsubsection{Prompting-Methoden}
+	\begin{itemize}
+		\item Zero-Shot-Prompting
+		\item One-Shot-Prompting
+		\item Few-Shot-Prompting
+		\item Chain-of-Thought-Prompting
+	\end{itemize}
+\subsubsection{KI-Modelle}
+	\begin{itemize}
+		\item GPT-5-nano (kleines Reasoning-Modell)
+		\item GPT-5.1 (großes Reasoning-Modell)
+		\item GPT-5.1-Codex (Modell spezialisiert auf agentic coding)
+		\item GPT-4.1 (\glqq{}Klügstes nicht-reasoning-Modell\grqq{})
+	\end{itemize}
+\subsubsection{Kontext-Informationen}
+	\begin{itemize}
+		\item Keine weiteren Kontextinformationen
+		\item Formulardefinition der relevanten Formulare
+		\item API und JDOC der zur Verfügung stehenden Funktionen
+	\end{itemize}
+
+
+\section{Annahmen und Nebenbedingungen}
+Die \gls{deg} stellt zur Durchführung dieser Arbeit Zugang und Kapital für die Verwendung von OpenAI Modellen bereit. Deshalb werden diese verwendet.
+
+Die Skripte werden in der domänenspezifischen Sprache \glqq{}formScript\grqq{} umgesetzt. Diese ist außerhalb der \gls{deg} unbekannt und dadurch nicht in den Trainingsdaten der KI-Modelle vorhanden. Sie wird bis 2028 verwendet werden. Es ist geplant, dass die Skripte im Jahr 2028 im Rahmen einer technologischen Modernisierung in die Skriptsprache TypeScript migriert werden. Es wird davon ausgegangen, dass das Generieren syntaktisch korrekter Skripte dadurch einfacher wird und die semantische Korrektheit eine Herausforderung bleibt.
+
+Als Basis zur Erstellung der Testdatensatz-Sammlung wird der aktuelle Daten zugegriffen. Vorgaben und ihre Änderungen werden per API aus dem produktiven System des Formularverwalters abgerufen. Skripte und ihre Änderungen werden aus der Versionskontrolle des Sourcecode-Repositories des Webclients entnommen. Es wird davon ausgegangen, dass sich aus diesen Datenbeständen ausreichend Testdatensätze extrahieren lassen. Dafür wird von drei Voraussetzungen ausgegangen:\\
+\begin{enumerate}
+	\item Die Zuordnung von Formularverwalter-Vorgaben zu Webclient-Skripten ist in ausreichender Qualität und Quantität möglich.
+	\item Es liegen ausreichend Skripte im Webclient vor, für die Teststories definiert sind.
+	\item Die Teststories sind von ausreichender Qualität, sodass das Erfüllen der Teststories ein semantisch korrektes Skript bedeutet.
+\end{enumerate}
+
+

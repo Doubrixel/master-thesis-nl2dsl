@@ -1,4 +1,7 @@
 \chapter{Problemstellung}
+\reviewng{
+	 Ich finde, dass es dir hier sehr gut gelungen ist, dich kurz zu halten, aber trotzdem alles anzuschneiden. Die Dichte der Informationen im Text ist sehr hoch \\
+	Gerade deswegen bietet sich hier eine bildliche Übersicht an, in der die relevanten Aspekte eingeordnet werden. Das macht es dem Leser leichter, wichtige Begriffe (wie Validierungslogik, Skripte, Formular, Formularverwalter, Live-Validierungen, etc.) einzuordnen/wiederzufinden.}
 \plannedpages{3 - 6 | T: 16.11.25}
 \note{
 Welches konkrete Praxisproblem existiert heute beim Übersetzen natürlichsprachlicher Prüfungslogik in DSL-Skripte?
@@ -17,7 +20,7 @@ Welche Annahmen liegen der Problemformulierung zugrunde?
 Die \gls{deg}\footnote{Bei der Kleinschreibung des Namens handelt es sich um ein Stilmittel \citep[vgl.][]{dataexpertsgmbhImpressumDataExperts}.} entwickelt einen Webclient, über den Landwirte Fördermittel beantragen können.
 Dafür füllen sie Antragsformulare aus und hinterlegen Flächendaten im \glspl{gis}. 
 
-Der Webclient erleichtert das Ausfüllen der Formulare durch eine Live-Va\-li\-die\-rung der Antragsdaten. Er gibt Meldungen aus, wenn die Datenkonstellation bestimmte Bedingungen erfüllt. Diese enthalten Bearbeitungshinweise oder Fehlermeldungen, die Antragsteller dabei unterstützen, inhaltlich korrekte Anträge einzureichen.
+Der Webclient erleichtert das Ausfüllen der Formulare durch eine Live-Va\-li\-die\-rung der Antragsdaten. Er gibt Meldungen aus, wenn die Datenkonstellation bestimmte Bedingungen erfüllt. Diese Meldungen enthalten Bearbeitungshinweise oder Fehlermeldungen, die Antragsteller dabei unterstützen, inhaltlich korrekte Anträge einzureichen.
 
 \beispiel{Wenn eine deutsche IBAN angegeben wird, dann muss diese 22 Stellen haben. Sonst wird dem Anwender folgende Fehlermeldung ausgegeben: \glqq{}Die von Ihnen eingegebene IBAN hat nicht die erforderlichen 22 Stellen.\grqq{} }
 
@@ -37,7 +40,7 @@ In den Wochen vor Beginn der Antragstellung fallen lange Durchlaufzeiten negativ
 \section{Automatische Übernahme}
 Um die Verzögerungen zu reduzieren, wurde bereits für einige Arten von Vorgaben eine automatische Übernahme vom Formularverwalter in den Programmcode ermöglicht. Einreichzeiträume werden beispielsweise in Form von zwei Da\-tums-Fel\-dern definiert und auch bei Schnittstellenbeschreibungen wird eine technisch auswertbare Form erzwungen.
 
-Den Auftraggebern wurde ein Werkzeug angeboten, mit dem sie selbst eine technisch auswertbare Repräsentation hätten erstellen können. Es hätte die grafische Programmierung von Validierungslogik ermöglicht. Dieses wurde abgelehnt, mit der Begründung, dass es für die Auftraggeber zu komplex sei, die Validierungslogik konfigurativ abzubilden. \vera{Sollte ich hier ein internes Beratungsprotokoll als Quelle anfügen?}
+Für die Live-Validierungen wurde den Auftraggebern ein Werkzeug angeboten, mit dem sie selbst eine technisch auswertbare Repräsentation hätten erstellen können. Es hätte die grafische Programmierung von Validierungslogik ermöglicht. Dieses wurde abgelehnt, mit der Begründung, dass es für die Auftraggeber zu komplex sei, die Validierungslogik konfigurativ abzubilden. \vera{Sollte ich hier ein internes Beratungsprotokoll als Quelle anfügen?}
 
 Automatische Übernahmen funktionieren nur, wenn Vorgaben technisch strukturiert vorliegen (z. B. Datumsfelder). Validierungsregeln liegen in natürlicher Sprache vor und sind fachsprachlich und inkonsistent formuliert. Hinzu kommt die proprietäre DSL mit spezifischer Semantik. Bisher existiert kein Verfahren, das die in natürlicher Sprache formulierte Validierungslogik automatisch in die proprietäre \gls{dsl} des Webclients überträgt. Ob \gls{ki}-gestützte Verfahren hierfür geeignet sind, ist Gegenstand dieser Arbeit.
 
@@ -54,9 +57,22 @@ Daraus ergibt sich folgende Problemstellung: \\
 Die Problemstellung basiert auf folgenden Annahmen:
 \begin{enumerate}
 	\item Die natürlichsprachlichen Beschreibungen der Auftraggeber sind sprachlich uneinheitlich. Inhaltlich sind sie jedoch eindeutig genug, um korrekt umgesetzt zu werden.
-	\item Die Zielsprache ist eine proprietäre Skriptsprache. Sie hat klar definierte Syntax und Semantik und kann prinzipiell automatisch erzeugt werden.
+	\item Die Zielsprache ist eine proprietäre Skriptsprache. Sie hat klar definierte Syntax und Semantik \reviewng{hier bieten sich auch Begriffe wie "reguläre Sprache" oder "kontextfreie Sprache" (je nachdem, was es ist) nach Noam Chomsky an.} und kann prinzipiell automatisch erzeugt werden.
 	\item Die Erfassung der Validierungslogik muss zwingend durch die Auftraggeber erfolgen, da sie die fachliche Verantwortung für die digitalen Antragsformulare tragen. Eine direkte Umsetzung durch Entwickler ohne vorliegende Anforderung ist weder organisatorisch noch inhaltlich möglich.
-	\item Die Qualität der automatischen Übersetzung muss so hoch sein, dass die zusätzliche Prüf- und Testlast akzeptabel bleibt.
+	\item Die Qualität der automatischen Übersetzung muss so hoch sein, dass die zusätzliche Prüf- und Testlast akzeptabel bleibt. \reviewng{Ich denke, das ist nicht Gegenstand deiner Arbeit, oder? Dann ist es auch nicht Teil der Problemstellung.}
 \end{enumerate}
 
 Vor diesem Hintergrund untersucht die vorliegende Arbeit, ob und unter welchen Bedingungen KI-gestützte Verfahren geeignet sind, die beschriebene Übersetzungsaufgabe zuverlässig zu automatisieren. Die konkreten Forschungsfragen, Hypothesen und Zielgrößen werden im nächsten Kapitel definiert.
+
+\todo{Das folgende ggf. noch in diesem Kapitel einsortieren:} 
+\realnote{\section{Kontext}
+Auf Basis des Prototypen soll in Zukunft ein Werkzeug entwickelt werden, das Entwicklern das Implementieren von Kundenvorgaben aus dem Formularverwalter abnimmt. Es gibt bereits für gewisse Vorgaben-Arten Werkzeuge, die das tun. 
+
+Für die Übernahme von Plausibilitätsprüfungen gibt es noch kein Werkzeug. Das Werkzeug soll als Eingabe den Vorgaben-Namen bekommen. Als Ausgabe soll es das Skript anpassen, das die Vorgabe umsetzt. Dafür soll es:\\
+1. Auf Basis des Vorgabennamen die Veränderung der Vorgabe per API aus dem Formularverwalter abfragen\\
+2. Im Webclient-Code ein oder mehrere Skripte auffinden, welche die Vorgabe umsetzen\\
+3. Ggf. weitere Kontextinformationen aus dem Formularverwalter oder Webclient Code laden\\
+4. Auf Basis der veränderten Vorgabe, des/r ursprünglichen Skripte(s) und ggf Kontextinformationen ein neues Skript generieren\\
+5. Das veränderte Skript durch kompilieren auf syntaktische Korrektheit prüfen und ggf zurück zu Schritt 4\\
+6. Das veränderte Skript im Webclient-Code ablegen\\
+}

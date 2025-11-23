@@ -4,14 +4,14 @@
 \documentclass[%
 	%draft,     				% Entwurfsstadium
   final,      				% fertiges Dokument
-	%%%% --- Schriftgröße ---
+	%%%% --- SchriftgrÃ¶ÃŸe ---
   12pt,
-  bigheadings,      	% große Überschriften
+  bigheadings,      	% groÃŸe Ãœberschriften
 	%%%% --- Sprache ---
   ngerman,          	% wird an andere Pakete weitergereicht
-	%%%% === Seitengröße ===
+	%%%% === SeitengrÃ¶ÃŸe ===
   a4paper,
-	%%%% === Optionen für den Satzspiegel ===
+	%%%% === Optionen fÃ¼r den Satzspiegel ===
   %BCOR15mm,          	% Zusaetzlicher Rand auf der Innenseite
   DIV14,            	% Seitengroesse (siehe Koma Skript Dokumentation(DIVcalc)!)
   1.1headlines,     	% Zeilenanzahl der Kopfzeilen
@@ -22,7 +22,7 @@
                     	% Wichtig fuer Konvertierungen
 	%%%% === Layout ===
   oneside,         	% einseitiges Layout
-  %twoside,          	% Seitenraender für zweiseitiges Layout
+  %twoside,          	% Seitenraender fÃ¼r zweiseitiges Layout
   %onecolumn,        	% Einspaltig
   openright,       		% Kapitel beginnen immer auf der rechten Seite
                    		% (macht nur bei 'twoside' Sinn)
@@ -33,7 +33,7 @@
   %                 	% Absatzabstand: Halbzeilig
   halfparskip,     		% Freiraum in letzter Zeile: 1em
   %                 	% Absatzabstand: keiner
-  %parindent,        	% Eingerückt (Standard)
+  %parindent,        	% EingerÃ¼ckt (Standard)
 	%%%% --- Kolumnentitel ---
   headsepline,     	 	% Linie unter Kolumnentitel
   %headnosepline,  	 	% keine Linie unter Kolumnentitel
@@ -51,8 +51,8 @@
   %tocleft,         	% Tabellenartige TOC
   listsindent,      	% eingereuckte LOT, LOF
   %listsleft,       	% Tabellenartige LOT, LOF
-  %pointednumbers,  	% Überschriftnummerierung mit Punkt, siehe DUDEN !
-  pointlessnumbers, 	% Überschriftnummerierung ohne Punkt, siehe DUDEN !
+  %pointednumbers,  	% Ãœberschriftnummerierung mit Punkt, siehe DUDEN !
+  pointlessnumbers, 	% Ãœberschriftnummerierung ohne Punkt, siehe DUDEN !
   %openbib,         	% alternative Formatierung des Literaturverzeichnisses
 	%%%% === Matheformeln ===
   %leqno,           	% Formelnummern links
@@ -77,7 +77,7 @@
   \newpage{\pagestyle{empty}%
   \cleardoublepage}}
   
-%Stilvorlage fürs Literaturverzeichnis
+%Stilvorlage fÃ¼rs Literaturverzeichnis
 %\usepackage{harvard}
 %\usepackage[numbers]{natbib}
 
@@ -91,32 +91,32 @@
 %Web Support for BiTex
 \usepackage{xurl}
 
-%Das folgende Packet hyperref führt dazu,
+%Das folgende Packet hyperref fÃ¼hrt dazu,
 %dass %die wichtigsten Dokumenteneigenschaften in der PDF-Datei eingetragen werden
-%(URL, Titel, Autor, Kurzbeschreibung und Stichwörter),
-%das Inhaltsverzeichnis und die Fußnoten verlinkt werden,
+%(URL, Titel, Autor, Kurzbeschreibung und StichwÃ¶rter),
+%das Inhaltsverzeichnis und die FuÃŸnoten verlinkt werden,
 %URLs verlinkt werden und
-%URLs im Text dargestellt und umgebrochen werden können.
+%URLs im Text dargestellt und umgebrochen werden kÃ¶nnen.
 \usepackage[
 	bookmarks=true,								% Lesezeichen erzeugen
 	bookmarksopen=false,					% Lesezeichen ausgeklappt
 	bookmarksnumbered=true,				% Anzeige der Kapitelzahlen am Anfang der Namen der Lesezeichen
-	pdfstartpage=1,							% Seite, welche automatisch geöffnet werden soll
+	pdfstartpage=1,							% Seite, welche automatisch geÃ¶ffnet werden soll
 	%baseurl=http://www.server.de/dateiname.pdf, 
 	% URL des PDF-Dokuments (oder Hintergrundinformationen)
-	pdftitle={KI-gestützte Übersetzung natürlichsprachlicher Prüfungslogik in DSL-Skripte am Beispiel von Plausibilitätsprüfungen für digitale Antragsformulare},
+	pdftitle={KI-gestÃ¼tzte Ãœbersetzung natÃ¼rlichsprachlicher PrÃ¼fungslogik in DSL-Skripte am Beispiel von PlausibilitÃ¤tsprÃ¼fungen fÃ¼r digitale Antragsformulare},
   % Titel des PDF-Dokuments
 	pdfauthor={Lemnitzer, Florian},	% Autor(Innen) des PDF-Dokuments
 	pdfsubject={},	% Inhaltsbeschreibung des
 	pdfkeywords={},
   % Stichwortangabe zum PDF-Dokument
-	breaklinks=true,							% ermöglicht einen Umbruch von URLs
-	colorlinks=true,							% Einfärbung von Links
+	breaklinks=true,							% ermÃ¶glicht einen Umbruch von URLs
+	colorlinks=true,							% EinfÃ¤rbung von Links
 	linkcolor=black,							% Linkfarbe: blau
 	anchorcolor=blue,						% Ankerfarbe: schwarz
 	citecolor=black, 							% Literaturlinks: schwarz
 	filecolor=black,							% Links zu lokalen Dateien: schwarz
-	menucolor=black, 							% Acrobat Menü Einträge: schwarz
+	menucolor=black, 							% Acrobat MenÃ¼ EintrÃ¤ge: schwarz
 	pagecolor=black, 							% Links zu anderen Seiten im Text: schwarz
 	urlcolor=black,							% URL-Farbe: blau
 	%backref=true,
@@ -129,7 +129,7 @@
 ] {hyperref}
 
 
-% für wichtig-box ..
+% fÃ¼r wichtig-box ..
 
 
 
@@ -154,17 +154,17 @@
 %T1 Zeichensatzkodierung
 \usepackage[T1]{fontenc}
 
-%Sonderzeichen der deutschen Sprache z.B. ß
+%Sonderzeichen der deutschen Sprache z.B. ÃŸ
 \usepackage[ansinew]{inputenc}
 
 %%%%%%%%%%%%%
 %%Schriften%%
 %%%%%%%%%%%%%
 
-%Schrift ändern
+%Schrift Ã¤ndern
 %\renewcommand{\familydefault}{pag}
 
-%Schriftarten ändern
+%Schriftarten Ã¤ndern
 \newcommand{\changefont}[3]{\fontfamily{#1} \fontseries{#2} \fontshape{#3} \selectfont}
 
 % Latin Modern
@@ -184,10 +184,10 @@
 %Zum definieren der Zeilenabstandes
 \usepackage{setspace}
 
-%durch dieses Paket ist das Einbinden von Grafiken möglich, aber nur eps Dateien
+%durch dieses Paket ist das Einbinden von Grafiken mÃ¶glich, aber nur eps Dateien
 \usepackage[]{graphicx}
 
-%durch dies Pakete können Bilder mit Textumflossen werden
+%durch dies Pakete kÃ¶nnen Bilder mit Textumflossen werden
 %\usepackage{floatflt}
 %\usepackage{/picins}
 
@@ -202,9 +202,9 @@
 \renewcommand{\lstlistingname}{Quellcode}
 \usepackage{xcolor}
 
-%Abkürzungsverzeichnis
+%AbkÃ¼rzungsverzeichnis
 \usepackage[intoc]{nomencl}
-\usepackage[normalem]{ulem} %Möglichkeiten zum welligen Unterstreichen bzw. durchstreichen von Text
+\usepackage[normalem]{ulem} %MÃ¶glichkeiten zum welligen Unterstreichen bzw. durchstreichen von Text
 
 \usepackage[acronym, toc,languages=german]{glossaries}
 \input{./glossar}
@@ -218,13 +218,13 @@
 \onehalfspace 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%Definieren des Abkürzungsverzeichnises%%
+%%Definieren des AbkÃ¼rzungsverzeichnises%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Befehl umbenennen in abk
 \let\abk\nomenclature
 
-% Befehl damit in der Kopfzeile auf der zweiten Seite auch Abkürzungsverzeichnis angezeigt wird
+% Befehl damit in der Kopfzeile auf der zweiten Seite auch AbkÃ¼rzungsverzeichnis angezeigt wird
 \newcommand{\Abkuerzungsverzeichnis}{
 %\clearpage % bei Option "oneside"
 \cleardoublepage % bei Option "twoside"
@@ -233,36 +233,36 @@
 \newpage
 }
 
-% Deutsche Überschrift
-\renewcommand{\nomname}{Abkürzungsverzeichnis}
+% Deutsche Ãœberschrift
+\renewcommand{\nomname}{AbkÃ¼rzungsverzeichnis}
 
-% Punkte zw. Abkürzung und Erklärung
+% Punkte zw. AbkÃ¼rzung und ErklÃ¤rung
 \setlength{\nomlabelwidth}{.20\hsize}
 \renewcommand{\nomlabel}[1]{#1 \dotfill}
 
-% Zeilenabstände verkleinern
+% ZeilenabstÃ¤nde verkleinern
 \setlength{\nomitemsep}{-\parsep}
 \makenomenclature
 
 %Unterstreichung des Markup Buchstaben
 \newcommand{\markup}[1]{\uline{#1}}
 
-%Optionale Argument können mit dem voreingestellten Wert verglichen werden
+%Optionale Argument kÃ¶nnen mit dem voreingestellten Wert verglichen werden
 \usepackage{ifthen}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%Definieren der Kopf- und Fußzeilen%%
+%%Definieren der Kopf- und FuÃŸzeilen%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{fancyhdr} 			%Paket laden
 \pagestyle{fancy}						%eigener Seitenstil
-\fancyhf{}									%alle Kopf- und Fußzeilenfelder bereinigen
-\fancyhead[OR]{						 	% "O" steht für "odd", also ungerade Seiten; "L" steht für links
+\fancyhf{}									%alle Kopf- und FuÃŸzeilenfelder bereinigen
+\fancyhead[OR]{						 	% "O" steht fÃ¼r "odd", also ungerade Seiten; "L" steht fÃ¼r links
 	\color{black}
 	\changefont{pag}{m}{n}
 	\bfseries\leftmark
 }
-\fancyhead[EL]{ % "E" für "even", also gerade Seiten; "R" steht für rechts
+\fancyhead[EL]{ % "E" fÃ¼r "even", also gerade Seiten; "R" steht fÃ¼r rechts
 %\fancyhead[L]{
 	\color{black}
 	\changefont{pag}{m}{n}
@@ -280,19 +280,19 @@
 }	
 \renewcommand{\footrulewidth}{0.4pt}				%untere Trennlinie
 
-%Plain umdefinieren für z.B. neues Kapitel
+%Plain umdefinieren fÃ¼r z.B. neues Kapitel
 \fancypagestyle{plain}{
 	\fancyhead{} 												
 	\renewcommand{\headrulewidth}{0pt}
 	\renewcommand{\footrulewidth}{0.4 pt}
 }
 
-%Farbe für Trennlinie im Kopf wechseln
+%Farbe fÃ¼r Trennlinie im Kopf wechseln
 \renewcommand{\headrule}{{\color{black}
 	\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth}
 }
 
-%Farbe für Trennlinie im Fuß wechseln
+%Farbe fÃ¼r Trennlinie im FuÃŸ wechseln
 \renewcommand{\footrule}{{\color{black}
 	\hrule width\headwidth height\headrulewidth \vskip-\headrulewidth \vspace{2mm}}
 }
@@ -310,8 +310,8 @@
 \usepackage{colortbl}
 \usepackage{hhline,float}
 \usepackage{array}
-\usepackage{booktabs} %einzelne Linien in Tabellen dicker oder dünner
-\usepackage{supertabular} %Tabellen über mehrere Seiten
+\usepackage{booktabs} %einzelne Linien in Tabellen dicker oder dÃ¼nner
+\usepackage{supertabular} %Tabellen Ã¼ber mehrere Seiten
 
 %%%%
 %%Tabellen vorbereiten
@@ -340,7 +340,7 @@
 	\textcolor{white}{\textbf{#1}}
 }
 %%%%
-%%Tabellensatzformatierungen von Herrn Voß
+%%Tabellensatzformatierungen von Herrn VoÃŸ
 %%http://www.torsten-schuetze.de/tex/tabsatz-2004.pdf
 %%%%
 \newcolumntype{f}{>{$}l<{$}}
@@ -374,7 +374,8 @@
 \newcommand{\vera}[1]{\textbf{\textsc{\textcolor{purple}{(Frage an Vera: #1)\\}}}}
 \newcommand{\niels}[1]{\textbf{\textsc{\textcolor{blue}{(Frage an Niels: #1)\\}}}}
 \newcommand{\plannedpages}[1]{\textbf{\textsc{\textcolor{green}{(Geplante Seitenzahl: #1)\\}}}}
-\newcommand{\review}[1]{\textbf{\textsc{\textcolor{orange}{(Anmerkung aus Review: #1)\\}}}}
+\newcommand{\reviewng}[1]{\textbf{\textsc{\textcolor{orange}{(Anmerkung Niels: #1)}}}}
+\newcommand{\reviewvm}[1]{\textbf{\textsc{\textcolor{orange}{(Anmerkung Vera: #1)}}}}
 
 \newboolean{shownotes}
 \setboolean{shownotes}{true}
@@ -396,6 +397,21 @@
 	}{}%
 }
 
+\newcommand{\realnote}[1]{%
+	\ifthenelse{\boolean{shownotes}}{%
+		{\colorbox{gray!10}{%
+				\parbox{1\linewidth}{	
+					\linespread{1}\selectfont   % etwas mehr Zeilenabstand
+					\setlength{\parskip}{6pt}
+					\ttfamily 					
+					\footnotesize
+					#1
+				}%
+			}%
+		}%
+	}{}%
+}
+
 \newcommand{\beispiel}[1]{%
 	\noindent
 	\setlength{\fboxsep}{6pt} % Abstand zwischen Text und Rahmen
@@ -407,7 +423,7 @@
 }
 
 % Benutzung:
-%\beispiel{Dies ist ein Beispieltext ohne zusätzliche Pakete.}
+%\beispiel{Dies ist ein Beispieltext ohne zusÃ¤tzliche Pakete.}
 
 \setlength\fboxsep{0.5pt}
 \setlength\fboxrule{0.3pt}

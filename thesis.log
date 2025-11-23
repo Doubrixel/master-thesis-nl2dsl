@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2024.2.23)  13 NOV 2025 16:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2024.2.23)  23 NOV 2025 18:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1575,27 +1575,29 @@ LaTeX Font Info:    Trying to load font information for OT1+zplm on input line
 
 (C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
-))
-\tf@toc=\write8
-\openout8 = `thesis.toc'.
-
-LaTeX Font Info:    Trying to load font information for T1+pag on input line 20
+)
+LaTeX Font Info:    Trying to load font information for T1+pag on input line 35
 .
- (C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pag.fd
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pag.fd
 File: t1pag.fd 2001/06/04 font definitions for T1/pag.
 )
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <12> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 20.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 35.
+
 [2
 
 
 
 
-] (thesis.lof)
+])
+\tf@toc=\write8
+\openout8 = `thesis.toc'.
+
+ [3] (thesis.lof)
 \tf@lof=\write9
 \openout9 = `thesis.lof'.
 
- [3
+ [4
 
 
 ] (thesis.lot)
@@ -1616,7 +1618,7 @@ Class scrbook Warning: \float@listhead detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@listhead interface on input line 25.
 
-[4
+[5
 
 ]
 chapter without number
@@ -1639,9 +1641,9 @@ Class scrbook Warning: \float@addtolists detected!
 \tf@lol=\write11
 \openout11 = `thesis.lol'.
 
- (thesis.acr [5
+ (thesis.acr [6
 
-]) (thesis.gls) [6
+]) (thesis.gls) [7
 
 
 ]
@@ -1684,29 +1686,33 @@ l.37 \include{./texs/001-einleitung.tex}
  (texs/002-Problemstellung.tex
 chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--15
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
 []\T1/pcr/m/n/10 Welches konkrete Praxisproblem existiert heute beim Übersetzen
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--15
+Underfull \hbox (badness 10000) in paragraph at lines 18--18
 []\T1/pcr/m/n/10 Warum sind existierende technische Lösungen unzureichend (konk
 ret für
  []
 
 
-Overfull \hbox (15.28003pt too wide) in paragraph at lines 2--16
+Overfull \hbox (4.5267pt too wide) in paragraph at lines 4--19
+\T1/ppl/b/sc/12 For-mu-lar, For-mu-lar-ver-wal-ter, Live-Validierungen, etc.) e
+in-zu-ord-
+ []
+
+
+Overfull \hbox (15.28003pt too wide) in paragraph at lines 4--19
 [] [][][][][][] 
  []
 
 
-Overfull \hbox (14.28003pt too wide) in paragraph at lines 22--23
+Overfull \hbox (14.28003pt too wide) in paragraph at lines 25--26
  [][][] 
  []
 
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 16.41594pt on input line 24.
 [2
 
 
@@ -1714,17 +1720,107 @@ LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 
 
 ]
-Overfull \hbox (14.28003pt too wide) in paragraph at lines 33--34
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 16.41594pt on input line 27.
+
+Overfull \hbox (14.28003pt too wide) in paragraph at lines 36--37
  [][][] 
  []
 
 [3]
-Overfull \hbox (2.66292pt too wide) in paragraph at lines 42--43
+Overfull \hbox (2.66292pt too wide) in paragraph at lines 45--46
 \T1/ppl/m/n/12 pro-prie-tä-re [][][]DSL[][] des Web-cli-ents über-trägt. Ob [][
 ][]künst-li-che In-tel-li-genz (KI)[][]-gestützte
  []
 
-[4]) [5]
+[4]
+Overfull \hbox (17.79pt too wide) in paragraph at lines 60--61
+\T1/ppl/b/sc/12 grif-fe wie rr-egu-lä-re Spra-cheöder "kon-text-freie Spra-che"
+(je nach-
+ []
+
+[5]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 9.49997pt on input line 78.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 9.49997pt on input line 78.
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+\T1/pcr/m/n/10 Auf Basis des Prototypen soll in Zukunft ein Werkzeug entwickelt
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+\T1/pcr/m/n/10 werden, das Entwicklern das Implementieren von Kundenvorgaben au
+s dem
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+\T1/pcr/m/n/10 Formularverwalter abnimmt. Es gibt bereits für gewisse Vorgaben-
+Arten
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+[]\T1/pcr/m/n/10 Für die Übernahme von Plausibilitätsprüfungen gibt es noch kei
+n
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+\T1/pcr/m/n/10 Werkzeug. Das Werkzeug soll als Eingabe den Vorgaben-Namen bekom
+men.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+\T1/pcr/m/n/10 Als Ausgabe soll es das Skript anpassen, das die Vorgabe umsetzt
+. Dafür
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+\T1/pcr/m/n/10 1. Auf Basis des Vorgabennamen die Veränderung der Vorgabe per A
+PI aus
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+\T1/pcr/m/n/10 2. Im Webclient-Code ein oder mehrere Skripte auffinden, welche 
+die
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+\T1/pcr/m/n/10 3. Ggf. weitere Kontextinformationen aus dem Formularverwalter o
+der
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+\T1/pcr/m/n/10 4. Auf Basis der veränderten Vorgabe, des/r ursprünglichen Skrip
+te(s)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+\T1/pcr/m/n/10 5. Das veränderte Skript durch kompilieren auf syntaktische Korr
+ektheit
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+
+ []
+
+)
+Overfull \hbox (26.2822pt too wide) in paragraph at lines 67--39
+[] [][][][][][] 
+ []
+
+[6]
 \openout2 = `./texs/003-Ziele-und-Hypothese.aux'.
 
  (texs/003-Ziele-und-Hypothese.tex
@@ -1751,18 +1847,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--13
 []\T1/pcr/m/n/10 Welche Annahmen werden explizit getroffen und wie werden sie
  []
 
-)
-Overfull \hbox (26.28003pt too wide) in paragraph at lines 2--41
+
+Overfull \hbox (26.28003pt too wide) in paragraph at lines 2--14
 [] [][][][][][] 
  []
 
-[6
+
+Overfull \hbox (6.53622pt too wide) in paragraph at lines 15--17
+\T1/ppl/m/n/12 wel-chen [][][]KI[][]-Ansätzen die Än-de-rung der Kun-den-vor-ga
+-ben am prä-zi-se-sten in Skrip-
+ []
+
+[7
 
 
 
 
 
 ]
+Overfull \hbox (14.49452pt too wide) in paragraph at lines 33--34
+\T1/ppl/m/n/12 In der Ar-beit sol-len drei Ar-te-fak-te ent-ste-hen: Testdatens
+atz-Sammlung, Evaluations-
+ []
+
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 13.67995pt on input line 34.
+
+Overfull \hbox (8.9972pt too wide) in paragraph at lines 35--36
+\T1/ppl/m/n/12 Es soll ei-ne Testdatensatz-Sammlung ent-ste-hen, die min-de-ste
+ns 30 []\T1/ppl/b/sc/12 (TO-DO: Quel-
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 3
+7.
+(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+)
+[8] [9]
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+
+ []
+
+[10]) [11]
 \openout2 = `./texs/004-Forschungsstand.aux'.
 
  (texs/004-Forschungsstand.tex
@@ -1807,7 +1933,7 @@ Overfull \hbox (26.28003pt too wide) in paragraph at lines 2--43
 [] [][][][][][] 
  []
 
-[7
+[12
 
 
 
@@ -1877,19 +2003,19 @@ Overfull \hbox (5.36317pt too wide) in paragraph at lines 24--25
 e, Feh-ler-text, Be-schrei-bung,
  []
 
-[8
+[13
 
 
 
 
 
-] [9]
+] [14]
 Overfull \hbox (14.64828pt too wide) in paragraph at lines 56--59
 \T1/ppl/m/it/12 Mecklemburg-Vorpommern Agrar-Antrag 2026, Mecklemburg-Vorpommer
 n ELER-Antrag
  []
 
-[10]
+[15]
 (C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.
 sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
@@ -1900,17 +2026,12 @@ File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 63.
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 6
-4.
 
-(C:\Users\flemnitzer\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ppl.fd
-File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-)
 Overfull \hbox (26.81328pt too wide) in paragraph at lines 74--75
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) [11]
+) [16]
 \openout2 = `./texs/006-Ergebnisse.aux'.
 
  (texs/006-Ergebnisse.tex
@@ -1961,7 +2082,7 @@ Overfull \hbox (26.28003pt too wide) in paragraph at lines 2--47
 [] [][][][][][] 
  []
 
-[12
+[17
 
 
 
@@ -2017,7 +2138,7 @@ Overfull \hbox (26.28003pt too wide) in paragraph at lines 2--49
 [] [][][][][][] 
  []
 
-[13
+[18
 
 
 
@@ -2051,7 +2172,7 @@ Overfull \hbox (26.28003pt too wide) in paragraph at lines 2--51
 [] [][][][][][] 
  []
 
-[14
+[19
 
 
 
@@ -2059,7 +2180,7 @@ Overfull \hbox (26.28003pt too wide) in paragraph at lines 2--51
 
 ] (thesis.bbl
 chapter without number
-) [15
+) [20
 
 
 
@@ -2067,12 +2188,12 @@ chapter without number
 \openout2 = `./texs/999-erklaerung.aux'.
 
  (texs/999-erklaerung.tex
-<./figs/signature.png, id=194, 374.14781pt x 127.97812pt>
+<./figs/signature.png, id=250, 374.14781pt x 127.97812pt>
 File: ./figs/signature.png Graphic file (type png)
 <use ./figs/signature.png>
 Package pdftex.def Info: ./figs/signature.png  used on input line 19.
 (pdftex.def)             Requested size: 170.71393pt x 58.39221pt.
-) [16
+) [21
 
 
  <./figs/signature.png>] (thesis.aux
@@ -2092,13 +2213,13 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 ### semi simple group (level 1) entered at line 218 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 25761 strings out of 474591
- 465802 string characters out of 5743418
+ 25821 strings out of 474591
+ 466781 string characters out of 5743418
  1945533 words of memory out of 5000000
- 47327 multiletter control sequences out of 15000+600000
- 608114 words of font info for 115 fonts, out of 8000000 for 9000
+ 47359 multiletter control sequences out of 15000+600000
+ 614213 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 113i,11n,110p,10940b,4263s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 113i,12n,110p,10940b,4065s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
@@ -2110,9 +2231,9 @@ rw/helvetic/uhvb8a.pfb><C:/Users/flemnitzer/AppData/Local/Programs/MiKTeX/fonts
 /type1/urw/palatino/uplb8a.pfb><C:/Users/flemnitzer/AppData/Local/Programs/MiKT
 eX/fonts/type1/urw/palatino/uplr8a.pfb><C:/Users/flemnitzer/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (22 pages, 304153 bytes).
+Output written on thesis.pdf (28 pages, 326190 bytes).
 PDF statistics:
- 305 PDF objects out of 1000 (max. 8388607)
- 79 named destinations out of 1000 (max. 500000)
- 163 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 386 PDF objects out of 1000 (max. 8388607)
+ 106 named destinations out of 1000 (max. 500000)
+ 219 words of extra memory for PDF output out of 10000 (max. 10000000)
 
